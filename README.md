@@ -46,17 +46,18 @@ baisyccoin-cli masternode status
 ```
 Also, if you want to check/start/stop **BaisycCoin** , run one of the following commands as **root**:
 
-**Ubuntu 16.04**:
+**Ubuntu 18.04**:
 ```
 systemctl status BaisycCoin #To check the service is running.
 systemctl start BaisycCoin #To start BaisycCoin service.
 systemctl stop BaisycCoin #To stop BaisycCoin service.
 systemctl is-enabled BaisycCoin #To check whetether BaisycCoin service is enabled on boot or not.
 ```
-**Ubuntu 14.04**:  
+**Ubuntu 16.04**:  
 ```
-/etc/init.d/BaisycCoin start #To start BaisycCoin service
-/etc/init.d/BaisycCoin stop #To stop BaisycCoin service
-/etc/init.d/BaisycCoin restart #To restart BaisycCoin service
+systemctl status BaisycCoin #To check the service is running.
+systemctl start BaisycCoin #To start BaisycCoin service.
+systemctl stop BaisycCoin #To stop BaisycCoin service.
+systemctl is-enabled BaisycCoin #To check whetether BaisycCoin service is enabled on boot or not.
 ```
 ***
