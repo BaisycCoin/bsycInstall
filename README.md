@@ -1,12 +1,12 @@
 # LightPayCoin
-Shell script to install a [LightPayCoin Masternode](https://www.lightpaycoin.org/) on a Linux server running Ubuntu 14.04 or 16.04. Use it on your own risk.
+Shell script to install a [BaisycCoin Masternode](https://www.baisyc.io/) on a Linux server running Ubuntu 14.04 or 16.04. Use it on your own risk.
 
 ***
 ## Installation:
 ```
-git clone https://github.com/lpcproject/lpcinstall.git
-cd lpcinstall
-bash lpc-install.sh
+git clone https://github.com/BaisycCoin/bsycInstall.git
+cd bsycInstall
+bash bsyc-install.sh
 ```
 ***
 
@@ -15,7 +15,7 @@ bash lpc-install.sh
 After the MN is up and running, you need to configure the desktop wallet accordingly. Here are the steps for Windows Wallet
 1. Open the LightPayCoin Coin Desktop Wallet.
 2. Go to RECEIVE and create a New Address: **MN1**
-3. Send **1000** **LightPayCoin** to **MN1**.
+3. Send **5000** **LightPayCoin** to **MN1**.
 4. Wait for 15 confirmations.
 5. Go to **Tools -> "Debug console - Console"**
 6. Type the following command: **masternode outputs**
@@ -40,9 +40,9 @@ startmasternode "alias" "0" "MN1"
 
 ## Usage:
 ```
-lightpaycoin-cli getinfo
-lightpaycoin-cli mnsync status
-lightpaycoin-cli masternode status
+baisyccoin-cli getinfo
+baisyccoin-cli mnsync status
+baisyccoin-cli masternode status
 ```
 Also, if you want to check/start/stop **LightPayCoin** , run one of the following commands as **root**:
 
