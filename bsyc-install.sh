@@ -1,12 +1,12 @@
 #!/bin/bash
 
-CONFIG_FILE='baisyccoin.conf'
-CONFIGFOLDER='/root/.baisyccoin'
-COIN_DAEMON='/usr/local/bin/baisyccoind'
-COIN_CLI='/usr/local/bin/baisyccoin-cli'
-COIN_REPO='https://github.com/BaisycCoin/BaisycCoin/releases/download/v1.0.0.0/baisyccoin-1.0.0-x86_64-linux-gnu.tar.gz'
-COIN_NAME='BaisycCoin'
-COIN_PORT=64758
+CONFIG_FILE='lightpaycoin.conf'
+CONFIGFOLDER='/root/.lightpaycoin'
+COIN_DAEMON='/usr/local/bin/lightpaycoind'
+COIN_CLI='/usr/local/bin/lightpaycoin-cli'
+COIN_REPO='https://github.com/lpcproject/LightPayCoin/releases/download/v1.0.0.1/lightpaycoin-1.0.0-x86_64-linux-gnu.tar.gz'
+COIN_NAME='LightPayCoin'
+COIN_PORT=39797
 
 NODEIP=$(curl -s4 icanhazip.com)
 
@@ -48,7 +48,7 @@ function compile_node() {
   tar xvzf $COIN_ZIP --strip=2 ${COIN_DIR}/bin/${COIN_NAME,,}d ${COIN_DIR}/bin/${COIN_NAME,,}-cli>/dev/null 2>&1
   compile_error
   rm -f $COIN_ZIP >/dev/null 2>&1
-  cp baisyccoin* /usr/local/bin
+  cp lightpaycoin* /usr/local/bin
   compile_error
   strip $COIN_DAEMON $COIN_CLI
   cd -
@@ -61,24 +61,19 @@ function configure_systemd() {
 [Unit]
 Description=$COIN_NAME service
 After=network.target
-
 [Service]
 User=root
 Group=root
-
 Type=forking
 #PIDFile=$CONFIGFOLDER/$COIN_NAME.pid
-
 ExecStart=$COIN_DAEMON -daemon -conf=$CONFIGFOLDER/$CONFIG_FILE -datadir=$CONFIGFOLDER
 ExecStop=-$COIN_CLI -conf=$CONFIGFOLDER/$CONFIG_FILE -datadir=$CONFIGFOLDER stop
-
 Restart=always
 PrivateTmp=true
 TimeoutStopSec=60s
 TimeoutStartSec=10s
 StartLimitInterval=120s
 StartLimitBurst=5
-
 [Install]
 WantedBy=multi-user.target
 EOF
@@ -110,7 +105,6 @@ function configure_startup() {
 # Description: This file starts and stops $COIN_NAME MN server
 #
 ### END INIT INFO
-
 case "\$1" in
  start)
    $COIN_DAEMON -daemon
@@ -233,8 +227,10 @@ function detect_ubuntu() {
    UBUNTU_VERSION=18
  elif [[ $(lsb_release -d) == *16.04* ]]; then
    UBUNTU_VERSION=16
+ elif [[ $(lsb_release -d) == *14.04* ]]; then
+   UBUNTU_VERSION=14
 else
-   echo -e "${RED}You are not running Ubuntu 16.04 or 18.04 Installation is cancelled.${NC}"
+   echo -e "${RED}You are not running Ubuntu 14.04, 16.04 or 18.04 Installation is cancelled.${NC}"
    exit 1
 fi
 }
@@ -255,7 +251,7 @@ fi
 function prepare_system() {
 echo -e "Prepare the system to install ${GREEN}$COIN_NAME${NC} master node."
 apt-get update >/dev/null 2>&1
-apt-get install -y wget curl binutils >/dev/null 2>&1
+apt-get install -y wget curl ufw binutils >/dev/null 2>&1
 }
 
 function important_information() {
@@ -263,7 +259,7 @@ function important_information() {
  echo -e "================================================================================"
  echo -e "$COIN_NAME Masternode is up and running listening on port ${RED}$COIN_PORT${NC}."
  echo -e "Configuration file is: ${RED}$CONFIGFOLDER/$CONFIG_FILE${NC}"
- if (( $UBUNTU_VERSION == 16 )); then
+ if (( $UBUNTU_VERSION == 16 || $UBUNTU_VERSION == 18 )); then
    echo -e "Start: ${RED}systemctl start $COIN_NAME.service${NC}"
    echo -e "Stop: ${RED}systemctl stop $COIN_NAME.service${NC}"
    echo -e "Status: ${RED}systemctl status $COIN_NAME.service${NC}"
@@ -289,7 +285,7 @@ function setup_node() {
   update_config
   enable_firewall
   important_information
-  if (( $UBUNTU_VERSION == 16 )); then
+  if (( $UBUNTU_VERSION == 16 || $UBUNTU_VERSION == 18 )); then
     configure_systemd
   else
     configure_startup
