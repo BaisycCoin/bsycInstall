@@ -4,7 +4,7 @@ CONFIG_FILE='baisyccoin.conf'
 CONFIGFOLDER='/root/.baisyccoin'
 COIN_DAEMON='/usr/local/bin/baisyccoind'
 COIN_CLI='/usr/local/bin/baisyccoin-cli'
-COIN_REPO='https://github.com/BaisycCoin/BaisycCoin/releases/download/v1.0.0.0/baisyccoin-1.0.0-x86_64-pc-linux-gnu.tar.gz'
+COIN_REPO='https://github.com/BaisycCoin/BaisycCoin/releases/download/v1.0.0.0/baisyccoin-1.0.0-x86_64-linux-gnu.tar.gz'
 COIN_NAME='BaisycCoin'
 COIN_PORT=64758
 
