@@ -1,12 +1,12 @@
 #!/bin/bash
 
-CONFIG_FILE='lightpaycoin.conf'
-CONFIGFOLDER='/root/.lightpaycoin'
-COIN_DAEMON='/usr/local/bin/lightpaycoind'
-COIN_CLI='/usr/local/bin/lightpaycoin-cli'
-COIN_REPO='https://github.com/lpcproject/LightPayCoin/releases/download/v1.0.0.1/lightpaycoin-1.0.0-x86_64-linux-gnu.tar.gz'
-COIN_NAME='LightPayCoin'
-COIN_PORT=39797
+CONFIG_FILE='baisyccoin.conf'
+CONFIGFOLDER='/root/.baisyccoin'
+COIN_DAEMON='/usr/local/bin/baisyccoind'
+COIN_CLI='/usr/local/bin/baisyccoin-cli'
+COIN_REPO='https://github.com/BaisycCoin/BaisycCoin/releases/download/v1.0.0.0/baisyccoin-1.0.0-x86_64-linux-gnu.tar.gz'
+COIN_NAME='BaisycCoin'
+COIN_PORT=64758
 
 NODEIP=$(curl -s4 icanhazip.com)
 
@@ -48,7 +48,7 @@ function compile_node() {
   tar xvzf $COIN_ZIP --strip=2 ${COIN_DIR}/bin/${COIN_NAME,,}d ${COIN_DIR}/bin/${COIN_NAME,,}-cli>/dev/null 2>&1
   compile_error
   rm -f $COIN_ZIP >/dev/null 2>&1
-  cp lightpaycoin* /usr/local/bin
+  cp baisyccoin* /usr/local/bin
   compile_error
   strip $COIN_DAEMON $COIN_CLI
   cd -
