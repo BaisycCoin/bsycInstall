@@ -215,7 +215,7 @@ function get_ip() {
 }
 
 function compile_error() {
-if [ "$?" -gt "0" ];
+if [ "$?" gt "0" ];
  then
   echo -e "${RED}Failed to compile $COIN_NAME. Please investigate.${NC}"
   exit 1
