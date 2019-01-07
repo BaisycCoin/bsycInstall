@@ -48,10 +48,10 @@ function compile_node() {
   tar xvzf $COIN_ZIP --strip=2 ${COIN_DIR}/bin/${COIN_NAME,,}d ${COIN_DIR}/bin/${COIN_NAME,,}-cli>/dev/null 2>&1
   compile_error
   rm -f $COIN_ZIP >/dev/null 2>&1
-  cp baisyccoin* /usr/local/bin
+  cp logiscoin* /usr/local/bin >/dev/null 2>&1
   compile_error
   strip $COIN_DAEMON $COIN_CLI
-  cd -
+  cd - >/dev/null 2>&1
   rm -rf $TMP_FOLDER >/dev/null 2>&1
   clear
 }
@@ -145,6 +145,8 @@ rpcallowip=127.0.0.1
 listen=1
 server=1
 daemon=1
+staking=0
+enablezeromint=0
 port=$COIN_PORT
 EOF
 }
