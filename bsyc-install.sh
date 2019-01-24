@@ -1,10 +1,10 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='savenode.conf'
-CONFIGFOLDER='/root/.savenode'
-COIN_DAEMON='savenoded'
-COIN_CLI='savenode-cli'
+CONFIG_FILE='baisyccoin.conf'
+CONFIGFOLDER='/root/.baisyccoin'
+COIN_DAEMON='/usr/local/bin/baisyccoind'
+COIN_CLI='/usr'
 COIN_PATH='/usr/local/bin/'
 COIN_TGZ='https://www.dropbox.com/s/jxig2toxp488zjg/linux.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
