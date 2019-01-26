@@ -1,1 +1,1 @@
-Directory containing ips-cli and ipsd files
+Directory containing basiyccoin-cli and baisyccoind files
