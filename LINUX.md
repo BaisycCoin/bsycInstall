@@ -21,7 +21,7 @@
   ```
   * From the terminal session, run the following command
   ```
-  tar -xvf bsyc-3.1.0-linux.tar.gz
+  tar -zxvf baisyccoin-1.0.0-x86_64-linux-gnu.tar.gz
   ```
   
 ## Install BaisycCoin Linux Daemon Runtime Dependencies
@@ -42,8 +42,8 @@
 
 * From the terminal session, run the following commands
 ```
-mkdir -p ~/.bsyc
-nano ~/.bsyc/bsyc.conf
+mkdir -p ~/.baisyccoin
+nano ~/.baisyccoin/baisyccoin.conf
 ```
 
 * Now add the following lines to this file, replacing any < > field with your information
@@ -63,10 +63,6 @@ port=64758
 externalip=<externalip>:64758
 masternodeprivkey=<masternode private key>
 ```
-
-* Get the latest node seeds from [here](https://github.com/bsycum-network/seeds/blob/master/README.md)
-* Copy and paste the addnode lines into the bottom of this file
-* Save and Exit
 
 ## Start the BaisycCoin Linux Daemon
 
