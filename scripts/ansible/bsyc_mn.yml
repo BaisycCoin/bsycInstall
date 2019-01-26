@@ -52,11 +52,6 @@
             become: yes
             become_user: baisyccoin
 
-          - name: suppress seeds.txt
-            file:
-                    path: /tmp/seeds.txt
-                    state: absent
-
           - name: modify masternode.conf
             lineinfile:
                     # dest should be changed to path from 2.3 onward
