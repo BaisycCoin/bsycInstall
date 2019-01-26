@@ -10,14 +10,14 @@
 
   * From the terminal session, run the following commands
   ```
-  ./ips-cli masternode start alias 0 <alias>
+  ./bsyc-cli masternode start alias 0 <alias>
   ```
 
 ### Checking your Linux VPS Masternode Status
 
   * From the terminal session, run the following commands
   ```
-  ./ips-cli masternode status
+  ./bsyc-cli masternode status
   ```
   * Your output should be similar to the following
 ```

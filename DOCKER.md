@@ -14,13 +14,13 @@
 
   * From the terminal session, run the following command
   ```
-  mkdir -p /home/user/blockchains/ips
+  mkdir -p /home/user/blockchains/bsyc
   ```
-## Create your IPSUM Linux Daemon configuration file
+## Create your BSYCUM Linux Daemon configuration file
 
 * From the terminal session, run the following commands
 ```
-nano /home/user/blockchains/ips/ips.conf
+nano /home/user/blockchains/bsyc/bsyc.conf
 ```
 
 * Now add the following lines to this file, replacing any < > field with your information
@@ -40,69 +40,69 @@ externalip=<externalip>:22331
 #masternodeprivkey=<masternode private key>
 ```
 
-* Get the latest node seeds from [here](https://github.com/ipsum-network/seeds/blob/master/README.md)
+* Get the latest node seeds from [here](https://github.com/bsycum-network/seeds/blob/master/README.md)
 * Copy and paste the addnode lines into the bottom of this file
 * Save and Exit
 
-## Run the IPSUM Linux Daemon in Docker
+## Run the BSYCUM Linux Daemon in Docker
 
 * From the terminal session, run the following commands
 ```
-docker run -dit --name ipsd -p 22331:22331 --restart=always -v /home/user/blockchains/ips:/root/.ips ipsumnetwork/ipsd
+docker run -dit --name bsycd -p 22331:22331 --restart=always -v /home/user/blockchains/bsyc:/root/.bsyc bsycumnetwork/bsycd
 ```
 
-## Wait for the IPSUM Linux Daemon to sync
+## Wait for the BSYCUM Linux Daemon to sync
 
 * From the terminal session, run the following commands
 ```
-docker exec -it ipsd /ips/src/ips-cli getinfo
+docker exec -it bsycd /bsyc/src/bsyc-cli getinfo
 ```
-* Compare the "Block Height" value with the latest from the [IPSUM block explorer](https://explorer.ipsum.network/). When those are the same, your daemon is synchronized 
+* Compare the "Block Height" value with the latest from the [BSYCUM block explorer](https://explorer.bsycum.network/). When those are the same, your daemon is synchronized 
 
 ## Generate your masternode private key
 
 * From the terminal session, run the following commands
 ```
-docker exec -it ipsd /ips/src/ips-cli masternode genkey
+docker exec -it bsycd /bsyc/src/bsyc-cli masternode genkey
 ```
 * Record this key, you'll need it in later steps
 
-## Get your IPSUM Linux Wallet Address
+## Get your BSYCUM Linux Wallet Address
 
   * From the terminal session, run the following commands
   ```
-  docker exec -it ipsd /ips/src/ips-cli getaccountaddress 0
+  docker exec -it bsycd /bsyc/src/bsyc-cli getaccountaddress 0
   ```
   * Record this address, you'll need it in the next step
   
-## Send your IPS Masternode collateral transaction
+## Send your BSYC Masternode collateral transaction
 
-  * Send exactly 5000 IPS to your wallet address you recorded in the step above.
-  * This is critical to get right, it cannot be any other amount other than 5000 IPS. No more, no less
+  * Send exactly 5000 BSYC to your wallet address you recorded in the step above.
+  * This is critical to get right, it cannot be any other amount other than 5000 BSYC. No more, no less
 
 ## Get your Masternode transaction output value
 *Once you have recieved your masternode collateral transaction in your Windows wallet proceed with this step*
 
   * From the terminal session, run the following commands
   ```
-  docker exec -it ipsd /ips/src/ips-cli masternode outputs
+  docker exec -it bsycd /bsyc/src/bsyc-cli masternode outputs
   ```
   * Record this value, as you'll need it in the next step
 
 ## Create your Masternode configuration file
 
-  * In the /home/user/blockchains/ips directory, edit the masternode.conf as described below
+  * In the /home/user/blockchains/bsyc directory, edit the masternode.conf as described below
   * Replace each < > field with the information obtained from the steps above.
     * ```<alias> <externalip>:22331 <masternode private key> <collateral txid> <collateral txid output>```
   * Example
     * ```mn1 167.99.234.180:22331 5dGdBDCYqMae1oRhH7djaBdyAfCGiJV9WgCFSVGmFwF6e5x3vpt 25dGdBDCYqasd123Mae1oRhH7asd123djaBdyAfCGiJV9WgCFSVGmFwF6e5x3vpt 0```
     
-## Stop the IPSUM Linux Daemon and restart it
+## Stop the BSYCUM Linux Daemon and restart it
 
 * From the terminal session, run the following commands
 ```
-docker exec -it ipsd /ips/src/ips-cli stop
-docker restart ipsd
+docker exec -it bsycd /bsyc/src/bsyc-cli stop
+docker restart bsycd
 ```
 
 ### Start your Linux VPS masternode from Docker
@@ -111,14 +111,14 @@ docker restart ipsd
 
   * From the terminal session, run the following commands
   ```
-  docker exec -it ipsd /ips/src/ips-cli startmasternode alias 0 <alias>
+  docker exec -it bsycd /bsyc/src/bsyc-cli startmasternode alias 0 <alias>
   ```
 
 ### Checking your Linux VPS Masternode Status
 
   * From the terminal session, run the following commands
   ```
-  docker exec -it ipsd /ips/src/ips-cli masternode status
+  docker exec -it bsycd /bsyc/src/bsyc-cli masternode status
   ```
   * Your output should be similar to the following
 ```
@@ -141,7 +141,7 @@ docker restart ipsd
 
   * From the terminal session, run the following commands
   ```
-  docker logs -f ipsd
+  docker logs -f bsycd
   ```
 
 

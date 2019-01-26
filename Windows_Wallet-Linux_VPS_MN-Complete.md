@@ -1,29 +1,29 @@
-# IPSUM Windows and Linux Wallet - Linux VPS Masternode Instructions
+# BSYCUM Windows and Linux Wallet - Linux VPS Masternode Instructions
 
 ## Requirements:
-* A local Masternode Wallet with the required Masternode collateral (5000 IPS).
+* A local Masternode Wallet with the required Masternode collateral (5000 BSYC).
 * A GNU/Linux VPS with a Static IP Address referred as __<your vps IP>__ in this document.
 
 * For this guide we are using Ubuntu 16.04 on the VPS, but any distro should do as the executables are statically linked. 
-* A 25GB SSD and 1000GB bandwidth will suffice (suggested vultr or digital ocean; use those referral links to support IPS: [vultr](https://www.vultr.com/?ref=7426211) and [Digital Ocean](https://m.do.co/c/0d726bd8cfdc)).
+* A 25GB SSD and 1000GB bandwidth will suffice (suggested vultr or digital ocean; use those referral links to support BSYC: [vultr](https://www.vultr.com/?ref=7426211) and [Digital Ocean](https://m.do.co/c/0d726bd8cfdc)).
 * Select IPV6 and Private Networking. I will leave DDoS and Automatic backups to you. 
 * Leave SSH Keys and Startup Script blank.
 
 
 ## Setup Wallet:
 
-* Download the latest wallet for your OS [Releases](https://github.com/ipsum-network/ips/releases)
+* Download the latest wallet for your OS [Releases](https://github.com/bsycum-network/bsyc/releases)
 * For Windows users:
   * run the installer, and leave everything as default.
 * For GNU/Linux users:
-* untar the archive where you please (you may copy ips-qt, ipsd and ips-cli in /usr/local/bin for easy access)
+* untar the archive where you please (you may copy bsyc-qt, bsycd and bsyc-cli in /usr/local/bin for easy access)
 * Run the qt, then close it again.
 
 ### Syncing
 
-* Open the ips.conf file. It can be found in C:/Users/<Your User>/AppData/Roaming/IPS under Windows, .ips/ips.conf under GNU/Linux.
-* Copy the addnodes from [here](https://github.com/ipsum-network/seeds/blob/master/README.md) into this file, then save it.
-* Re-open your ips-qt. It will now sync much more quickly.
+* Open the bsyc.conf file. It can be found in C:/Users/<Your User>/AppData/Roaming/BSYC under Windows, .bsyc/bsyc.conf under GNU/Linux.
+* Copy the addnodes from [here](https://github.com/bsycum-network/seeds/blob/master/README.md) into this file, then save it.
+* Re-open your bsyc-qt. It will now sync much more quickly.
 
 ### Addresses
 
@@ -41,7 +41,7 @@
 
 ### Coin Control
 
-* Coin Control is how we will create a transaction of *exactly* 5000 IPS. This is necessary, as any other amount is ineligible for a MN status.
+* Coin Control is how we will create a transaction of *exactly* 5000 BSYC. This is necessary, as any other amount is ineligible for a MN status.
 * Copy your MN1 address to the clipboard.
 * Open the send tab.
 * Choose “Inputs” at the top left of the window.
@@ -50,7 +50,7 @@
 * Paste your MN1 address in the “Pay To” section. The label “MN1” should automatically be displayed.
 * Input 5000 into the “Amount” section.
 * Press send, and pay any transaction fees.
-* After 2 minutes, open Coin Control again. You should see a transaction of exactly 5000 IPS under MN1. Wait for it to receive 15 confirmations before the next step.
+* After 2 minutes, open Coin Control again. You should see a transaction of exactly 5000 BSYC under MN1. Wait for it to receive 15 confirmations before the next step.
 
 ### Masternode Info
 
@@ -66,7 +66,7 @@
 
 * This gives you your \<masternode privkey>. Copy it in your masternode configuration file after 22331 (keep a space between 22331 and the masternode privkey) and keep your masternode priv key secret.
 
-* Be sure the 5000IPS payment to MN1 have reached at least 15 confirmations before inputing the following command:
+* Be sure the 5000BSYC payment to MN1 have reached at least 15 confirmations before inputing the following command:
   
 ```masternode outputs```
 
@@ -101,50 +101,50 @@
     
 ### Now we should be connected to our VPS, let's input the following commands in our VPS terminal:
 
-* Let's begin with adding a new user for ips, our user will be called ips:
+* Let's begin with adding a new user for bsyc, our user will be called bsyc:
 
-```adduser ips```
+```adduser bsyc```
 
 Answer the questions and choose a [good password](https://www.howtogeek.com/195430/how-to-create-a-strong-password-and-remember-it/)
 
 * Let's switch to our new user:
 
-```sudo -u ips -i```
+```sudo -u bsyc -i```
 
-Now that we are ips, we can retrieve the ips files:
+Now that we are bsyc, we can retrieve the bsyc files:
 
-```wget https://github.com/ipsum-network/ips/releases/download/v3.1.0.0/ips-3.1.0-linux.tar.gz```
+```wget https://github.com/bsycum-network/bsyc/releases/download/v3.1.0.0/bsyc-3.1.0-linux.tar.gz```
 
 unpack them:
 
-```tar xzf ips-3.1.0-linux.tar.gz```
+```tar xzf bsyc-3.1.0-linux.tar.gz```
 
-This will create a directory ips-3.1.0.
+This will create a directory bsyc-3.1.0.
 
 * We may now revert to root:
 ```
 exit
 ```
 
-and place the programs in /usr/local/bin so that we won't need full path when running our IPS tools:
+and place the programs in /usr/local/bin so that we won't need full path when running our BSYC tools:
 ```
-cp /home/ips/ips-3.1.0/bin/ips* /usr/local/bin
-chown root:root /usr/local/bin/ips*
+cp /home/bsyc/bsyc-3.1.0/bin/bsyc* /usr/local/bin
+chown root:root /usr/local/bin/bsyc*
 ```
 
-* let's become ips user again:
+* let's become bsyc user again:
 ```
-sudo -u ips -i
+sudo -u bsyc -i
 ```
 Create a directory for the configuration:
 
-```mkdir ~/.ips```
+```mkdir ~/.bsyc```
 
 and edit the config file:
 
 * and edit the config file:
 
-```nano ~/.ips/ips.conf```
+```nano ~/.bsyc/bsyc.conf```
 
 * Copy/paste:
 
@@ -167,42 +167,42 @@ masternodeprivkey=<masternode privkey>
 * For \<rpcusername> and \<rpc password>, use any text you would like. You will not need to remember it, but once you start the daemon, do not change it.
 * \<masternode privkey> is the key we obtained earlier using ```masternode genkey``` in the debug console of our wallet
 
-* Use \<Ctrl> + o to save and \<Ctrl> + x to close our ips.conf
+* Use \<Ctrl> + o to save and \<Ctrl> + x to close our bsyc.conf
 
 * Now we'll add the nodes with the following sequence of commands:
 ```
-wget https://github.com/ipsum-network/seeds/blob/master/README.md
+wget https://github.com/bsycum-network/seeds/blob/master/README.md
 
 sed -ni 's/.*\(addnode=\)/\1/p' README.md
 
-cat README.md >> .ips/ips.conf
+cat README.md >> .bsyc/bsyc.conf
 ```
 
 
-We may now start the server so that it begins to sync (note we don't need the full path to ipsd as it is in our $PATH variable):
+We may now start the server so that it begins to sync (note we don't need the full path to bsycd as it is in our $PATH variable):
 ```
-ipsd -daemon
+bsycd -daemon
 ```
 
 * Let's clean this place:
 
-```rm ips-3.1.0-linux.tar.gz README.md```
+```rm bsyc-3.1.0-linux.tar.gz README.md```
 
 * Check the server is syncing:
 
-```watch ./ips-3.1.0/bin/ips-cli getinfo```
+```watch ./bsyc-3.1.0/bin/bsyc-cli getinfo```
 
 You should see the __blocks__ field raising
 * close this using \<Ctrl> + c
 
 
-* to allow ipsd to start after a reboot we'll set a cronjob:
+* to allow bsycd to start after a reboot we'll set a cronjob:
 
 ```crontab -e```
 
 Choose nano as editor (or the one you prefer), then insert a new line:
 
-```@reboot sleep 30 && /usr/local/bin/ipsd -daemon```
+```@reboot sleep 30 && /usr/local/bin/bsycd -daemon```
 
 Save and close (if using nano as you now know \<Ctrl> + o to save, \<Ctrl> + x to quit)
 It should say your crontab has been updated.
@@ -215,7 +215,7 @@ exit
 
 Yes, type exit twice: first one to revert to root and second one to exit the vps.
 
-__Note:__ When you later connect to your vps, connect yourself using ips credentials (username ips and the __good password__ you specified when we created the user ips above)
+__Note:__ When you later connect to your vps, connect yourself using bsyc credentials (username bsyc and the __good password__ you specified when we created the user bsyc above)
 
 ## Let's finish: back to your wallet
 
@@ -237,16 +237,16 @@ Then expect the first masternode reward within __~60h__ and then __every ~20 hou
 Example:
 144.202.51.69:22331
 
-## Congratulations, you are now the operator of your very own IPS Masternode! This will support the integrity of the IPS network, as well as secure a passive income well into the future.
+## Congratulations, you are now the operator of your very own BSYC Masternode! This will support the integrity of the BSYC network, as well as secure a passive income well into the future.
 
 
 ## Memo
 
 Here's a list of common commands to be used on the vps to check MN' status:
 ```
-ips-cli getinfo
-ips-cli mnsync status
-ips-cli masternode status
+bsyc-cli getinfo
+bsyc-cli mnsync status
+bsyc-cli masternode status
 ```
 
 
@@ -268,7 +268,7 @@ You should use __ssh key authentication__ instead of passwords to connect to you
 
 ###  [Firewall](https://github.com/grnt4v/guides/tree/master/scripts/firewall)
 
-ips uses tcp port 22331 IN and OUT, nothing else.
+bsyc uses tcp port 22331 IN and OUT, nothing else.
 You also need http(s) OUT to be able to update your system and 22 IN to be able to connect using ssh.
 
 So the only open ports on your vps should be IN: 22331 and OUT: 22331 80 443

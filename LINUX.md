@@ -1,4 +1,4 @@
-# Linux VPS IPSUM Daemon Installation Guide
+# Linux VPS BSYCUM Daemon Installation Guide
 
 ## Connect to your Linux VPS over SSH
 
@@ -13,18 +13,18 @@
   sudo apt-get upgrade
   ```
   
-## Download the IPSUM Linux Daemon
+## Download the BSYCUM Linux Daemon
 
   * From the terminal session, run the following command
   ```
-  wget https://github.com/ipsum-network/ips/releases/download/v3.1.0.0/ips-3.1.0-linux.tar.gz
+  wget https://github.com/bsycum-network/bsyc/releases/download/v3.1.0.0/bsyc-3.1.0-linux.tar.gz
   ```
   * From the terminal session, run the following command
   ```
-  tar -xvf ips-3.1.0-linux.tar.gz
+  tar -xvf bsyc-3.1.0-linux.tar.gz
   ```
   
-## Install IPSUM Linux Daemon Runtime Dependencies
+## Install BSYCUM Linux Daemon Runtime Dependencies
 
   * From the terminal session, run the following commands
   ```
@@ -38,12 +38,12 @@
   sudo apt-get install -y libdb4.8-dev libdb4.8++-dev
   ```
   
-## Create your IPSUM Linux Daemon configuration file
+## Create your BSYCUM Linux Daemon configuration file
 
 * From the terminal session, run the following commands
 ```
-mkdir -p ~/.ips
-nano ~/.ips/ips.conf
+mkdir -p ~/.bsyc
+nano ~/.bsyc/bsyc.conf
 ```
 
 * Now add the following lines to this file, replacing any < > field with your information
@@ -64,24 +64,24 @@ externalip=<externalip>:22331
 masternodeprivkey=<masternode private key>
 ```
 
-* Get the latest node seeds from [here](https://github.com/ipsum-network/seeds/blob/master/README.md)
+* Get the latest node seeds from [here](https://github.com/bsycum-network/seeds/blob/master/README.md)
 * Copy and paste the addnode lines into the bottom of this file
 * Save and Exit
 
-## Start the IPSUM Linux Daemon
+## Start the BSYCUM Linux Daemon
 
 * From the terminal session, run the following commands
 ```
-./ips-3.1.0/bin/ipsd
+./bsyc-3.1.0/bin/bsycd
 ```
 
-## Wait for the IPSUM Linux Daemon to sync
+## Wait for the BSYCUM Linux Daemon to sync
 
 * From the terminal session, run the following commands
 ```
-./ips-3.1.0/bin/ips-cli getinfo
+./bsyc-3.1.0/bin/bsyc-cli getinfo
 ```
-* Compare the "Block Height" value with the latest from the [IPSUM block explorer](https://explorer.ipsum.network/). When those are the same, your daemon is synchronized 
+* Compare the "Block Height" value with the latest from the [BSYCUM block explorer](https://explorer.bsycum.network/). When those are the same, your daemon is synchronized 
 
 ### Start your Linux VPS Masternode from Windows (For Windows Wallet Users)
 

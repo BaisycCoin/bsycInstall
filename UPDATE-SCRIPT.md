@@ -1,4 +1,4 @@
-# CryptoNeverSleeps IPSUM Update Script
+# CryptoNeverSleeps BSYCUM Update Script
 *If you used CryptoNeverSleeps installation script, this update will work for you*
 
 ## Linux VPS
@@ -12,42 +12,42 @@
 
   * From the terminal session, run the following commands
   ```
-  wget https://raw.githubusercontent.com/ipsum-network/guides/master/scripts/ipsum_update.sh
+  wget https://raw.githubusercontent.com/bsycum-network/guides/master/scripts/bsycum_update.sh
   ```
   ```
-  chmod 755 ipsum_update.sh
+  chmod 755 bsycum_update.sh
   ```
 
 ### Run the update
 
   * From the terminal session, run the following commands
   ```
-  ./ipsum_update.sh
+  ./bsycum_update.sh
   ```
-### Check the IPSUM Linux Daemon 
+### Check the BSYCUM Linux Daemon 
 *Now check that the daemon is in sync and display the proper version*
 
   * From the terminal session, run the following commands
   ```
-  cd ips-3.1.0/bin
+  cd bsyc-3.1.0/bin
   ```
   ```
-  ./ips-cli getinfo
+  ./bsyc-cli getinfo
   ```
 
-  * Compare the "Block Height" value with the latest from the [IPSUM block explorer](https://explorer.ipsum.network/). When those are the same, your daemon is synchronized
+  * Compare the "Block Height" value with the latest from the [BSYCUM block explorer](https://explorer.bsycum.network/). When those are the same, your daemon is synchronized
 
   * Compare the version string displayed, if upgraded properly it will say ```"version" : 3010000```
 
-### Check the IPSUM Masternode Status
+### Check the BSYCUM Masternode Status
 *Now check that the daemon is in sync and display the proper version*
 
   * From the terminal session, run the following commands
   ```
-  cd ips-3.1.0/bin
+  cd bsyc-3.1.0/bin
   ```
   ```
-  ./ips-cli masternode status
+  ./bsyc-cli masternode status
   ```
 
   * If you get Status 4 - Masternode successfully started - All finished

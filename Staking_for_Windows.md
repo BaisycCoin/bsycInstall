@@ -1,10 +1,10 @@
 ## Windows Wallet Staking Guide
-* This section is designed to help you setup your Windows wallet for staking IPS
+* This section is designed to help you setup your Windows wallet for staking BSYC
 
-Install the latest released IPSUM Windows Wallet
+Install the latest released BSYCUM Windows Wallet
 Both 32bit and 64bit variants are available
 
-[Wallet Releases](https://github.com/ipsum-network/ips/releases)
+[Wallet Releases](https://github.com/bsycum-network/bsyc/releases)
 
 ## Basic wallet Staking
 From inside your wallet create a passphrase
@@ -30,7 +30,7 @@ Staking=1
 Settings -> Unlock Wallet
 ```
 
-Now you are set to start staking your IPS
+Now you are set to start staking your BSYC
 
 Note: Remember transaction in your wallet will need 101 conformations to be eligable to start staking.
 
@@ -39,7 +39,7 @@ Note: Remember transaction in your wallet will need 101 conformations to be elig
 
 ## Indexing coins for Staking.
 
-In this tutorial we will be indexing 2000 IPS into a index of 1000 IPS each
+In this tutorial we will be indexing 2000 BSYC into a index of 1000 BSYC each
 
 * From wallet turn on coin control
 
