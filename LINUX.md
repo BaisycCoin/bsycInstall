@@ -63,21 +63,20 @@ port=64758
 externalip=<externalip>:64758
 masternodeprivkey=<masternode private key>
 ```
-
 ## Start the BaisycCoin Linux Daemon
 
 * From the terminal session, run the following commands
 ```
-./bsyc-3.1.0/bin/bsycd
+./baisyccoin-1.0.0/bin/baisyccoind
 ```
 
 ## Wait for the BaisycCoin Linux Daemon to sync
 
 * From the terminal session, run the following commands
 ```
-./bsyc-3.1.0/bin/bsyc-cli getinfo
+./baisyccoin-1.0.0/bin/baisyccoin-cli getinfo
 ```
-* Compare the "Block Height" value with the latest from the [BaisycCoin block explorer](https://explorer.bsycum.network/). When those are the same, your daemon is synchronized 
+* Compare the "Block Height" value with the latest from the [BaisycCoin block explorer](https://explorer.baisyccoin/). When those are the same, your daemon is synchronized 
 
 ### Start your Linux VPS Masternode from Windows (For Windows Wallet Users)
 
