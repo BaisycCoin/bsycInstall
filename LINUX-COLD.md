@@ -3,7 +3,7 @@
 ## Get your Linux VPS external IP address
 
   * Record the external IP of your VPS instance, it will be used in the next step
-  * Configure your VPS firewall to accept incoming connections on port 22331
+  * Configure your VPS firewall to accept incoming connections on port 64758
 
 ## Install the Linux VPS BaisycCoin Daemon
 
@@ -47,9 +47,9 @@
 
   * In the ~/.bsyc directory, edit the masternode.conf as described below
   * Replace each < > field with the information obtained from the steps above.
-    * ```<alias> <externalip>:22331 <masternode private key> <collateral txid> <collateral txid output>```
+    * ```<alias> <externalip>:64758 <masternode private key> <collateral txid> <collateral txid output>```
   * Example
-    * ```mn1 167.99.234.180:22331 5dGdBDCYqMae1oRhH7djaBdyAfCGiJV9WgCFSVGmFwF6e5x3vpt 25dGdBDCYqasd123Mae1oRhH7asd123djaBdyAfCGiJV9WgCFSVGmFwF6e5x3vpt 0```
+    * ```mn1 167.99.234.180:64758 5dGdBDCYqMae1oRhH7djaBdyAfCGiJV9WgCFSVGmFwF6e5x3vpt 25dGdBDCYqasd123Mae1oRhH7asd123djaBdyAfCGiJV9WgCFSVGmFwF6e5x3vpt 0```
     
 ## Edit your BaisycCoin Linux Daemon configuration file on the VPS
 
@@ -71,8 +71,8 @@ staking=0
 rpcallowip=127.0.0.1
 logtimestamps=1
 #masternode=1
-port=22331
-externalip=<externalip>:22331
+port=64758
+externalip=<externalip>:64758
 #masternodeprivkey=<masternode private key>
 ```
 

@@ -24,7 +24,7 @@
   {
     "txhash" : "<txid>",
     "outputidx" : <txid output>,
-    "netaddr" : "<externalip>:22331",
+    "netaddr" : "<externalip>:64758",
     "addr" : "<wallet address>",
     "status" : 4,
     "message" : "Masternode successfully started"

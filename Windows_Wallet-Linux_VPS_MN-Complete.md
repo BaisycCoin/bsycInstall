@@ -58,13 +58,13 @@
 * From the tools menu, open the __Debug Console__ and __open the masternode configuration file__.
 * In your masternode configuration file, input a new line:
 
-```MN1 <your vps IP>:22331 ```
+```MN1 <your vps IP>:64758 ```
 
 * In the debug console, input the command:
 
 ```masternode genkey```
 
-* This gives you your \<masternode privkey>. Copy it in your masternode configuration file after 22331 (keep a space between 22331 and the masternode privkey) and keep your masternode priv key secret.
+* This gives you your \<masternode privkey>. Copy it in your masternode configuration file after 64758 (keep a space between 64758 and the masternode privkey) and keep your masternode priv key secret.
 
 * Be sure the 5000BSYC payment to MN1 have reached at least 15 confirmations before inputing the following command:
   
@@ -73,11 +73,11 @@
 * This gives you a \<transaction hash> (long string of nonsense) and an \<index> (0 or 1)
   Add this to your masternode configuration file which should now look like this:
   
-```MN1 <your vps IP>:22331 <masternode privkey> <transaction hash> <index>```
+```MN1 <your vps IP>:64758 <masternode privkey> <transaction hash> <index>```
 
   similar to the following line:
   
-```MN1 111.222.111.222:22331 df1265465465432KSJBFNSKJ aLJKHVBSFDLJHGbcdeSFKJSFf654321abcdef321654abcdef321654 1```
+```MN1 111.222.111.222:64758 df1265465465432KSJBFNSKJ aLJKHVBSFDLJHGbcdeSFKJSFf654321abcdef321654abcdef321654 1```
 
 * Save and close your masternode configuration file.
 
@@ -159,8 +159,8 @@ staking=0
 rpcallowip=127.0.0.1
 logtimestamps=1
 masternode=1
-port=22331
-externalip=<externalip>:22331
+port=64758
+externalip=<externalip>:64758
 
 masternodeprivkey=<masternode privkey>
 ```
@@ -235,7 +235,7 @@ Then expect the first masternode reward within __~60h__ and then __every ~20 hou
 [Discord Channel](https://discordapp.com/channels/443435262916427776/443633482468425729)
 
 Example:
-144.202.51.69:22331
+144.202.51.69:64758
 
 ## Congratulations, you are now the operator of your very own BSYC Masternode! This will support the integrity of the BSYC network, as well as secure a passive income well into the future.
 
@@ -268,10 +268,10 @@ You should use __ssh key authentication__ instead of passwords to connect to you
 
 ###  [Firewall](https://github.com/grnt4v/guides/tree/master/scripts/firewall)
 
-bsyc uses tcp port 22331 IN and OUT, nothing else.
+bsyc uses tcp port 64758 IN and OUT, nothing else.
 You also need http(s) OUT to be able to update your system and 22 IN to be able to connect using ssh.
 
-So the only open ports on your vps should be IN: 22331 and OUT: 22331 80 443
+So the only open ports on your vps should be IN: 64758 and OUT: 64758 80 443
 
 I recommend using ferm as a firewall rule editor on your vps:
 
@@ -281,7 +281,7 @@ Add the following rule in /etc/ferm/ferm.conf
 under INPUT:
 ```
 proto tcp
-dport 22331
+dport 64758
 mod state state NEW
 ACCEPT;
 ```

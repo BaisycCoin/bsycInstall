@@ -59,8 +59,8 @@ staking=0
 rpcallowip=127.0.0.1
 logtimestamps=1
 masternode=1
-port=22331
-externalip=<externalip>:22331
+port=64758
+externalip=<externalip>:64758
 masternodeprivkey=<masternode private key>
 ```
 
