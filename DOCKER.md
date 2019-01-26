@@ -14,13 +14,13 @@
 
   * From the terminal session, run the following command
   ```
-  mkdir -p /home/user/blockchains/bsyc
+  mkdir -p /home/user/blockchains/baisyccoin
   ```
 ## Create your BaisycCoin Linux Daemon configuration file
 
 * From the terminal session, run the following commands
 ```
-nano /home/user/blockchains/bsyc/bsyc.conf
+nano /home/user/blockchains/baisyccoin/baisyccoin.conf
 ```
 
 * Now add the following lines to this file, replacing any < > field with your information
@@ -48,16 +48,16 @@ externalip=<externalip>:64758
 
 * From the terminal session, run the following commands
 ```
-docker run -dit --name bsycd -p 64758:64758 --restart=always -v /home/user/blockchains/bsyc:/root/.bsyc bsycumnetwork/bsycd
+docker run -dit --name baisyccoind -p 64758:64758 --restart=always -v /home/user/blockchains/baisyccoin:/root/.baisyccoin/baisyccoind
 ```
 
 ## Wait for the BaisycCoin Linux Daemon to sync
 
 * From the terminal session, run the following commands
 ```
-docker exec -it bsycd /bsyc/src/bsyc-cli getinfo
+docker exec -it baisyccoind /baisyccoin/src/baisyccoin-cli getinfo
 ```
-* Compare the "Block Height" value with the latest from the [BaisycCoin block explorer](https://explorer.bsycum.network/). When those are the same, your daemon is synchronized 
+* Compare the "Block Height" value with the latest from the [BaisycCoin block explorer](https://explorer.baisyccoin/). When those are the same, your daemon is synchronized 
 
 ## Generate your masternode private key
 
