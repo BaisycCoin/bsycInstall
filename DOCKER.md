@@ -101,8 +101,8 @@ docker exec -it baisyccoind /baisyccoin/src/baisyccoin-cli masternode genkey
 
 * From the terminal session, run the following commands
 ```
-docker exec -it bsycd /bsyc/src/bsyc-cli stop
-docker restart bsycd
+docker exec -it baisyccoind /baisyccoin/src/baisyccoin-cli stop
+docker restart baisyccoind
 ```
 
 ### Start your Linux VPS masternode from Docker
