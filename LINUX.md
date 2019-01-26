@@ -17,7 +17,7 @@
 
   * From the terminal session, run the following command
   ```
-  wget https://github.com/bsycum-network/bsyc/releases/download/v3.1.0.0/bsyc-3.1.0-linux.tar.gz
+  wget https://github.com/BaisycCoin/BaisycCoin/releases/download/v1.0.0/baisyccoin-1.0.0-x86_64-linux-gnu.tar.gz
   ```
   * From the terminal session, run the following command
   ```
@@ -51,7 +51,7 @@ nano ~/.bsyc/bsyc.conf
 ```
 rpcuser=<rpcusername>
 rpcpassword=<rpcpassword>
-rpcport=22332
+rpcport=64759
 listen=1
 server=1
 daemon=1
