@@ -167,17 +167,7 @@ masternodeprivkey=<masternode privkey>
 * For \<rpcusername> and \<rpc password>, use any text you would like. You will not need to remember it, but once you start the daemon, do not change it.
 * \<masternode privkey> is the key we obtained earlier using ```masternode genkey``` in the debug console of our wallet
 
-* Use \<Ctrl> + o to save and \<Ctrl> + x to close our bsyc.conf
-
-* Now we'll add the nodes with the following sequence of commands:
-```
-wget https://github.com/bsycum-network/seeds/blob/master/README.md
-
-sed -ni 's/.*\(addnode=\)/\1/p' README.md
-
-cat README.md >> .bsyc/bsyc.conf
-```
-
+* Use \<Ctrl> + o to save and \<Ctrl> + x to close our baisyccoin.conf
 
 We may now start the server so that it begins to sync (note we don't need the full path to bsycd as it is in our $PATH variable):
 ```
