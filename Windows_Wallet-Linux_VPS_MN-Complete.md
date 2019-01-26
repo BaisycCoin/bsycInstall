@@ -109,17 +109,17 @@ Answer the questions and choose a [good password](https://www.howtogeek.com/1954
 
 * Let's switch to our new user:
 
-```sudo -u bsyc -i```
+```sudo -u baisyccoin -i```
 
-Now that we are bsyc, we can retrieve the bsyc files:
+Now that we are baisyccoin, we can retrieve the baisyccoin files:
 
-```wget https://github.com/bsycum-network/bsyc/releases/download/v3.1.0.0/bsyc-3.1.0-linux.tar.gz```
+```wget https://github.com/BaisycCoin/BaisycCoin/releases/download/v1.0.0/baisyccoin-1.0.0-x86_64-linux-gnu.tar.gz```
 
 unpack them:
 
-```tar xzf bsyc-3.1.0-linux.tar.gz```
+```tar -zxzf baisyccoin-1.0.0-x86_64-linux-gnu.tar.gz```
 
-This will create a directory bsyc-3.1.0.
+This will create a directory baisyccoin-1.0.0
 
 * We may now revert to root:
 ```
