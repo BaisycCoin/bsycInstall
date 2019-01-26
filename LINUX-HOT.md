@@ -78,8 +78,8 @@ externalip=<externalip>:64758
 
 * From the terminal session, run the following commands
 ```
-./baisyccoin-3.1.0/bin/bsyc-cli stop
-./bsyc-3.1.0/bin/bsycd
+./baisyccoin-1.0.0/bin/baisyccoin-cli stop
+./baisyccoin-1.0.0/bin/baisyccoind
 ```
 
 ### Start your Linux VPS masternode from Linux (For Linux Wallet Users)
