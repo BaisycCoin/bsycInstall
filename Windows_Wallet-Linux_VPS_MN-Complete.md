@@ -1,4 +1,4 @@
-# BSYCUM Windows and Linux Wallet - Linux VPS Masternode Instructions
+# BaisycCoin Windows and Linux Wallet - Linux VPS Masternode Instructions
 
 ## Requirements:
 * A local Masternode Wallet with the required Masternode collateral (5000 BSYC).

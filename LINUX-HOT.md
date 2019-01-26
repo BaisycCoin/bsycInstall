@@ -5,9 +5,9 @@
   * Record the external IP of your VPS instance, it will be used in the next step
   * Configure your VPS firewall to accept incoming connections on port 22331
 
-## Install the Linux VPS BSYCUM Daemon
+## Install the Linux VPS BaisycCoin Daemon
 
-[Linux VPS BSYCUM Daemon Installation Guide](LINUX.md)
+[Linux VPS BaisycCoin Daemon Installation Guide](LINUX.md)
 
 ## Generate your masternode private key
 
@@ -17,7 +17,7 @@
 ```
 * Record this key, you'll need it in later steps
 
-## Get your BSYCUM Linux Wallet Address
+## Get your BaisycCoin Linux Wallet Address
 
   * From the terminal session, run the following commands
   ```
@@ -47,7 +47,7 @@
   * Example
     * ```mn1 167.99.234.180:22331 5dGdBDCYqMae1oRhH7djaBdyAfCGiJV9WgCFSVGmFwF6e5x3vpt 25dGdBDCYqasd123Mae1oRhH7asd123djaBdyAfCGiJV9WgCFSVGmFwF6e5x3vpt 0```
     
-## Edit your BSYCUM Linux Daemon configuration file
+## Edit your BaisycCoin Linux Daemon configuration file
 
 * From the terminal session, run the following commands
 ```
@@ -74,7 +74,7 @@ externalip=<externalip>:22331
 
 * Save and Exit
 
-## Stop the BSYCUM Linux Daemon and restart it
+## Stop the BaisycCoin Linux Daemon and restart it
 
 * From the terminal session, run the following commands
 ```

@@ -1,7 +1,7 @@
 ## Windows Wallet Staking Guide
 * This section is designed to help you setup your Windows wallet for staking BSYC
 
-Install the latest released BSYCUM Windows Wallet
+Install the latest released BaisycCoin Windows Wallet
 Both 32bit and 64bit variants are available
 
 [Wallet Releases](https://github.com/bsycum-network/bsyc/releases)

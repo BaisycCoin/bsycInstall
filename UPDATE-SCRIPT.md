@@ -1,4 +1,4 @@
-# CryptoNeverSleeps BSYCUM Update Script
+# CryptoNeverSleeps BaisycCoin Update Script
 *If you used CryptoNeverSleeps installation script, this update will work for you*
 
 ## Linux VPS
@@ -24,7 +24,7 @@
   ```
   ./bsycum_update.sh
   ```
-### Check the BSYCUM Linux Daemon 
+### Check the BaisycCoin Linux Daemon 
 *Now check that the daemon is in sync and display the proper version*
 
   * From the terminal session, run the following commands
@@ -35,11 +35,11 @@
   ./bsyc-cli getinfo
   ```
 
-  * Compare the "Block Height" value with the latest from the [BSYCUM block explorer](https://explorer.bsycum.network/). When those are the same, your daemon is synchronized
+  * Compare the "Block Height" value with the latest from the [BaisycCoin block explorer](https://explorer.bsycum.network/). When those are the same, your daemon is synchronized
 
   * Compare the version string displayed, if upgraded properly it will say ```"version" : 3010000```
 
-### Check the BSYCUM Masternode Status
+### Check the BaisycCoin Masternode Status
 *Now check that the daemon is in sync and display the proper version*
 
   * From the terminal session, run the following commands

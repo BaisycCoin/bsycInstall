@@ -16,7 +16,7 @@
   ```
   mkdir -p /home/user/blockchains/bsyc
   ```
-## Create your BSYCUM Linux Daemon configuration file
+## Create your BaisycCoin Linux Daemon configuration file
 
 * From the terminal session, run the following commands
 ```
@@ -44,20 +44,20 @@ externalip=<externalip>:22331
 * Copy and paste the addnode lines into the bottom of this file
 * Save and Exit
 
-## Run the BSYCUM Linux Daemon in Docker
+## Run the BaisycCoin Linux Daemon in Docker
 
 * From the terminal session, run the following commands
 ```
 docker run -dit --name bsycd -p 22331:22331 --restart=always -v /home/user/blockchains/bsyc:/root/.bsyc bsycumnetwork/bsycd
 ```
 
-## Wait for the BSYCUM Linux Daemon to sync
+## Wait for the BaisycCoin Linux Daemon to sync
 
 * From the terminal session, run the following commands
 ```
 docker exec -it bsycd /bsyc/src/bsyc-cli getinfo
 ```
-* Compare the "Block Height" value with the latest from the [BSYCUM block explorer](https://explorer.bsycum.network/). When those are the same, your daemon is synchronized 
+* Compare the "Block Height" value with the latest from the [BaisycCoin block explorer](https://explorer.bsycum.network/). When those are the same, your daemon is synchronized 
 
 ## Generate your masternode private key
 
@@ -67,7 +67,7 @@ docker exec -it bsycd /bsyc/src/bsyc-cli masternode genkey
 ```
 * Record this key, you'll need it in later steps
 
-## Get your BSYCUM Linux Wallet Address
+## Get your BaisycCoin Linux Wallet Address
 
   * From the terminal session, run the following commands
   ```
@@ -97,7 +97,7 @@ docker exec -it bsycd /bsyc/src/bsyc-cli masternode genkey
   * Example
     * ```mn1 167.99.234.180:22331 5dGdBDCYqMae1oRhH7djaBdyAfCGiJV9WgCFSVGmFwF6e5x3vpt 25dGdBDCYqasd123Mae1oRhH7asd123djaBdyAfCGiJV9WgCFSVGmFwF6e5x3vpt 0```
     
-## Stop the BSYCUM Linux Daemon and restart it
+## Stop the BaisycCoin Linux Daemon and restart it
 
 * From the terminal session, run the following commands
 ```
