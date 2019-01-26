@@ -4,8 +4,8 @@
 * A local Masternode Wallet with the required Masternode collateral (5000 BSYC).
 * A GNU/Linux VPS with a Static IP Address referred as __<your vps IP>__ in this document.
 
-* For this guide we are using Ubuntu 16.04 on the VPS, but any distro should do as the executables are statically linked. 
-* A 25GB SSD and 1000GB bandwidth will suffice (suggested vultr or digital ocean; use those referral links to support BSYC: [vultr](https://www.vultr.com/?ref=7426211) and [Digital Ocean](https://m.do.co/c/0d726bd8cfdc)).
+* For this guide we are using Ubuntu 18.04 on the VPS, but any distro should do as the executables are statically linked. 
+* A 25GB SSD and 1000GB bandwidth will suffice (suggested vultr or digital ocean; use those referral links to support BaisycCoin: [vultr](https://www.vultr.com/) and [Digital Ocean](https://www.digitalocean.com/)).
 * Select IPV6 and Private Networking. I will leave DDoS and Automatic backups to you. 
 * Leave SSH Keys and Startup Script blank.
 
