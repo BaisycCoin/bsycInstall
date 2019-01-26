@@ -12,17 +12,17 @@
 
 ## Setup Wallet:
 
-* Download the latest wallet for your OS [Releases](https://github.com/bsycum-network/bsyc/releases)
+* Download the latest wallet for your OS [Releases](https://github.com/BaisycCoin/BaisycCoin/releases)
 * For Windows users:
   * run the installer, and leave everything as default.
 * For GNU/Linux users:
-* untar the archive where you please (you may copy bsyc-qt, bsycd and bsyc-cli in /usr/local/bin for easy access)
+* untar the archive where you please (you may copy baisyccoin-qt, baisyccoind and baisyccoin-cli in /usr/local/bin for easy access)
 * Run the qt, then close it again.
 
 ### Syncing
 
-* Open the bsyc.conf file. It can be found in C:/Users/<Your User>/AppData/Roaming/BSYC under Windows, .bsyc/bsyc.conf under GNU/Linux.
-* Copy the addnodes from [here](https://github.com/bsycum-network/seeds/blob/master/README.md) into this file, then save it.
+* Open the baisyccoin.conf file. It can be found in C:/Users/<Your User>/AppData/Roaming/BaisycCoin under Windows, .baisyccoin/baisyccoin.conf under GNU/Linux.
+* Copy the addnodes from [here](https://github.com/BaisycCoin/seeds/blob/master/README.md) into this file, then save it.
 * Re-open your bsyc-qt. It will now sync much more quickly.
 
 ### Addresses
