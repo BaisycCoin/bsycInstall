@@ -1,6 +1,6 @@
 ![](https://ipsum.network/images/logo-ipsum-coin-blue2x.png)
 
-# IPS v3.1.0 Masternode Setup Guide [ Ubuntu 16.04 ]
+# BSYC v3.1.0 Masternode Setup Guide [ Ubuntu 16.04 ]
 
 THIS GUIDE IS FOR ROOT USERS -
 
@@ -18,13 +18,13 @@ Shell script to install a [Bsyc Masternode](https://ipsum.network/) on a Linux s
 **This script can generate a private key for you, or you can generate your own private key on the Desktop software.**
 
 Steps generate your own private key. 
-1.  Download and install IPS 3.1.0 for Windows -   Download Link  - https://github.com/ipsum-network/ips/releases/
-2.  When you start IPS, the wallet will **NOT"** sync. 
+1.  Download and install BSYC 3.1.0 for Windows -   Download Link  - https://github.com/ipsum-network/ips/releases/
+2.  When you start BSYC, the wallet will **NOT"** sync. 
 3.  We need to add the seeds (addnode=.....)
 4.  Go to **Tools -> Click "Open Wallet Configuration File"**  
 5.  Copy and paste the seeds from this link into the file you just opened (ips.conf) https://github.com/ipsum-network/seeds
 6.  Save and close the file.
-7.  Exit the IPS Wallet, then Open the IPS Wallet
+7.  Exit the BSYC Wallet, then Open the BSYC Wallet
 8.  Go to **Tools -> Click "Debug Console"** 
 9.  Type the following command: **masternode genkey**  
 10. You now have your generated **Private Key**  (MasternodePrivKey)
@@ -39,7 +39,7 @@ Once the VPS installation is finished.
 
 Check the block height
 
-We want the blocks to match whats on the IPS block explorer (https://explorer.ipsum.network/)
+We want the blocks to match whats on the BSYC block explorer (https://explorer.ipsum.network/)
 
 Once they match you can proceed with the rest of the guide.
 
@@ -110,7 +110,7 @@ systemctl is-enabled Bsyc      #To check if Bsycum service is enabled on boot
 
 Any donation is highly appreciated
 
-**IPS**: ikPW7eMcLu17KzUASAZSVevLGSLX8FoxYc  
+**BSYC**: ikPW7eMcLu17KzUASAZSVevLGSLX8FoxYc  
 **BTC**: 32PN27dDZhUYAmyJTWuzDvNscbVpkL9855  
 **ETH**: 0x02680cdF57EEDC20C8A12036CA03e8D5F813b33b  
 **LTC**: MKYX9Pm58z6xSWT4Rc3CynjR58nj8hKo4F  

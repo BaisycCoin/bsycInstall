@@ -5,7 +5,7 @@ PURPLE='\033[0;35m'
 
 clear
 
-echo -e "Welcome to your ${GREEN}firewall installation script${NC} for ${PURPLE}IPS${NC} Masternode."
+echo -e "Welcome to your ${GREEN}firewall installation script${NC} for ${PURPLE}BSYC${NC} Masternode."
 
 sleep 3
 
@@ -35,6 +35,6 @@ echo -e "If you get locked out, ${GREEN}don't panic${NC}: let a few minutes pass
 echo
 echo -e "${GREEN}your firewall is now up and running${NC}!"
 echo
-echo -e "Enjoy and happy crypto with ${PURPLE}IPS${NC}!"
+echo -e "Enjoy and happy crypto with ${PURPLE}BSYC${NC}!"
 sleep 2
 echo

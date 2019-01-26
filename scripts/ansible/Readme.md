@@ -1,13 +1,13 @@
-## IPS masternode installation using ansible
+## BSYC masternode installation using ansible
 
-This directory and subdirectories contains necessary files to install IPS masternodes using ansible.
+This directory and subdirectories contains necessary files to install BSYC masternodes using ansible.
 
 
 ### structure
 
 * ansible.cfg is the configuration file for ansible
 * ips_mn.yml is our playbook
-* hosts contains a definition of the hosts where IPS masternodes are to be deployed
+* hosts contains a definition of the hosts where BSYC masternodes are to be deployed
 * templates directory contains a template for ips.conf
 * files contains ipsd and ips-cli executables files
 

@@ -10,7 +10,7 @@ echo "********************This script was forked from XeZZoR********************
 echo "****************************************************************************"
 echo "* Ubuntu 16.04 is the recommended opearting system for this install.       *"
 echo "*                                                                          *"
-echo "* This script will install and configure your IPSUM Coin Masternode.      *"
+echo "* This script will install and configure your BSYCUM Coin Masternode.      *"
 echo "****************************************************************************"
 echo && echo && echo
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
@@ -53,9 +53,9 @@ if [[ $DOSETUP =~ "y" ]] ; then
 fi 
 cd ~
 sudo ./ips-cli -daemon stop
-echo "! Stopping IPS Daemon !"
+echo "! Stopping BSYC Daemon !"
 
-echo "! Removing IPS !"
+echo "! Removing BSYC !"
 sudo rm -f ipsd
 sudo rm -f ips-cli
 sudo rm -f ips-qt
