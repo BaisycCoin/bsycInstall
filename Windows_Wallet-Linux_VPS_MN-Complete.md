@@ -19,11 +19,6 @@
 * untar the archive where you please (you may copy baisyccoin-qt, baisyccoind and baisyccoin-cli in /usr/local/bin for easy access)
 * Run the qt, then close it again.
 
-### Syncing
-
-* Open the baisyccoin.conf file. It can be found in C:/Users/<Your User>/AppData/Roaming/BaisycCoin under Windows, .baisyccoin/baisyccoin.conf under GNU/Linux.
-* Copy the addnodes from [here](https://github.com/BaisycCoin/seeds/blob/master/README.md) into this file, then save it.
-* Re-open your baisyccoin-qt. It will now sync much more quickly.
 
 ### Addresses
 
