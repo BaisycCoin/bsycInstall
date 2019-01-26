@@ -126,32 +126,32 @@ This will create a directory baisyccoin-1.0.0
 exit
 ```
 
-and place the programs in /usr/local/bin so that we won't need full path when running our BSYC tools:
+and place the programs in /usr/local/bin so that we won't need full path when running our BaisycCoin tools:
 ```
-cp /home/bsyc/bsyc-3.1.0/bin/bsyc* /usr/local/bin
-chown root:root /usr/local/bin/bsyc*
+cp /home/BaisycCoin/baisyccoin-1.0.0/bin/baisyccoin* /usr/local/bin
+chown root:root /usr/local/bin/baisyccoin*
 ```
 
-* let's become bsyc user again:
+* let's become baisyccoin user again:
 ```
-sudo -u bsyc -i
+sudo -u baisyccoin -i
 ```
 Create a directory for the configuration:
 
-```mkdir ~/.bsyc```
+```mkdir ~/.baisyccoin```
 
 and edit the config file:
 
 * and edit the config file:
 
-```nano ~/.bsyc/bsyc.conf```
+```nano ~/.baisyccoin/baisyccoin.conf```
 
 * Copy/paste:
 
 ```
 rpcuser=<rpcusername>
 rpcpassword=<rpcpassword>
-rpcport=22332
+rpcport=64759
 listen=1
 server=1
 daemon=1
