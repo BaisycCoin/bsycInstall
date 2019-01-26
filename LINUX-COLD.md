@@ -17,7 +17,7 @@
 
 * From the terminal session, run the following commands
 ```
-./bsyc-3.1.0/bin/bsyc-cli masternode genkey
+./baisyccoin-1.0.0/bin/baisyccoin-cli masternode genkey
 ```
 * Record this key, you'll need it in later steps
 
@@ -25,7 +25,7 @@
 
   * From the terminal session, run the following commands
   ```
-  ./bsyc-3.1.0/bin/bsyc-cli getaccountaddress 0
+  ./baisyccoin-1.0.0/bin/baisyccoin-cli getaccountaddress 0
   ```
   * Record this address, you'll need it in the next step
   
