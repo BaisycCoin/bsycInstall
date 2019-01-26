@@ -227,16 +227,16 @@ Then expect the first masternode reward within __~60h__ and then __every ~20 hou
 Example:
 144.202.51.69:64758
 
-## Congratulations, you are now the operator of your very own BSYC Masternode! This will support the integrity of the BSYC network, as well as secure a passive income well into the future.
+## Congratulations, you are now the operator of your very own BaisycCoin Masternode! This will support the integrity of the BaisycCoin network, as well as secure a passive income well into the future.
 
 
 ## Memo
 
 Here's a list of common commands to be used on the vps to check MN' status:
 ```
-bsyc-cli getinfo
-bsyc-cli mnsync status
-bsyc-cli masternode status
+baisyccoin-cli getinfo
+baisyccoin-cli mnsync status
+baisyccoin-cli masternode status
 ```
 
 
@@ -258,7 +258,7 @@ You should use __ssh key authentication__ instead of passwords to connect to you
 
 ###  [Firewall](https://github.com/grnt4v/guides/tree/master/scripts/firewall)
 
-bsyc uses tcp port 64758 IN and OUT, nothing else.
+BaisycCoin uses tcp port 64758 IN and OUT, nothing else.
 You also need http(s) OUT to be able to update your system and 22 IN to be able to connect using ssh.
 
 So the only open ports on your vps should be IN: 64758 and OUT: 64758 80 443
