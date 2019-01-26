@@ -10,7 +10,7 @@ User=root
 Group=root
 ```
 
-Shell script to install a [Ips Masternode](https://ipsum.network/) on a Linux server running Ubuntu 16.04. Use it on your own risk.
+Shell script to install a [Bsyc Masternode](https://ipsum.network/) on a Linux server running Ubuntu 16.04. Use it on your own risk.
 ***
 
 ## Private Key
@@ -32,7 +32,7 @@ Steps generate your own private key.
 
 ## VPS installation
 ```
-wget -q https://github.com/CryptoNeverSleeps/Ipsum-Core-Script/raw/master/ips_install.sh
+wget -q https://github.com/CryptoNeverSleeps/Bsycum-Core-Script/raw/master/ips_install.sh
 bash ips_install.sh
 ```
 Once the VPS installation is finished.
@@ -61,9 +61,9 @@ CTRL and C  at the same time  (CTRL KEY and C KEY)
 ## Desktop wallet setup  
 
 After the MN is up and running, you need to configure the desktop wallet accordingly. Here are the steps:  
-1. Open the Ips Desktop Wallet.  
+1. Open the Bsyc Desktop Wallet.  
 2. Go to RECEIVE and create a New Address: **MN1**  
-3. Send **5000** Ips to **MN1**. You need to send all 5000 coins in one single transaction.
+3. Send **5000** Bsyc to **MN1**. You need to send all 5000 coins in one single transaction.
 4. Wait for 15 confirmations.  
 5. Go to **Tools -> Click "Debug Console"** 
 6. Type the following command: **masternode outputs**  
@@ -96,13 +96,13 @@ ips-cli masternode status
 ips-cli masternode status  
 ips-cli getinfo
 ```
-Also, if you want to check/start/stop **Ips**, run one of the following commands as **root**:
+Also, if you want to check/start/stop **Bsyc**, run one of the following commands as **root**:
 
 ```
-systemctl status Ips          #To check if Ipsum service is running  
-systemctl start Ips           #To start Ipsum service  
-systemctl stop Ips            #To stop Ipsum service  
-systemctl is-enabled Ips      #To check if Ipsum service is enabled on boot  
+systemctl status Bsyc          #To check if Bsycum service is running  
+systemctl start Bsyc           #To start Bsycum service  
+systemctl stop Bsyc            #To stop Bsycum service  
+systemctl is-enabled Bsyc      #To check if Bsycum service is enabled on boot  
 ```  
 ***
 

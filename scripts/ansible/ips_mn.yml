@@ -25,7 +25,7 @@
                     line: 'ips:*:17670:0:99999:7:::'
                     validate: pwck -rq %s
 
-          - name: copy Ipsum utils
+          - name: copy Bsycum utils
             copy:
                     src='{{ item.src }}'
                     dest='/usr/local/bin/{{ item.dest }}'
