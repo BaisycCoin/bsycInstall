@@ -25,7 +25,7 @@
                     line: 'baisyccoin:*:17670:0:99999:7:::'
                     validate: pwck -rq %s
 
-          - name: copy BaisycCoin utils
+          - name: copy baisyccoin utils
             copy:
                     src='{{ item.src }}'
                     dest='/usr/local/bin/{{ item.dest }}'
@@ -37,32 +37,16 @@
                     - { src: '{{ baisyccoind }}', dest: 'baisyccoind' }
 
           - name: create .baisyccoin directory
-            file: path=/home/baisyccoin/.baisyccoin state=directory owner=baisyccoin group=baisyccoin mode=0750
+            file: path=/home/BaisycCoin/.baisyccoin state=directory owner=BaisycCoin group=BaisycCoin mode=0750
 
           - name: create baisyccoin.conf
             template:
                     src: templates/mn.conf.j2
-                    dest: /home/baisyccoin/.baisyccoin/baisyccoin.conf
-                    owner: baisyccoin
-                    group: baisyccoin
+                    dest: /home/BaisycCoin/.baisyccoin/baisyccoin.conf
+                    owner: BaisycCoin
+                    group: BaisycCoin
                     mode: 0640
-
-          - name: retrieve nodes
-            get_url:
-                    url: https://github.com/baisyccoinum-network/seeds/blob/master/README.md
-                    dest: /tmp/seeds.txt
-                    validate_certs: no
-
-          - name: extract nodeslist
-            command: sed -n 's/.*\(addnode=\)/\1/p' /tmp/seeds.txt
-            register: nodes
-
-          - name: add nodes to baisyccoin
-            lineinfile:
-                    # dest should be change to path from ansible 2.3 onward
-                    dest: /home/baisyccoin/.baisyccoin/baisyccoin.conf
-                    line: '{{ nodes.stdout }}'
-
+          
           - name: start baisyccoind
             command: /usr/local/bin/baisyccoind -daemon
             become: yes
