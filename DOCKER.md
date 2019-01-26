@@ -63,7 +63,7 @@ docker exec -it baisyccoind /baisyccoin/src/baisyccoin-cli getinfo
 
 * From the terminal session, run the following commands
 ```
-docker exec -it bsycd /bsyc/src/bsyc-cli masternode genkey
+docker exec -it baisyccoind /baisyccoin/src/baisyccoin-cli masternode genkey
 ```
 * Record this key, you'll need it in later steps
 
@@ -71,7 +71,7 @@ docker exec -it bsycd /bsyc/src/bsyc-cli masternode genkey
 
   * From the terminal session, run the following commands
   ```
-  docker exec -it bsycd /bsyc/src/bsyc-cli getaccountaddress 0
+  docker exec -it baisyccoind /baisyccoin/src/baisyccoin-cli getaccountaddress 0
   ```
   * Record this address, you'll need it in the next step
   
@@ -85,7 +85,7 @@ docker exec -it bsycd /bsyc/src/bsyc-cli masternode genkey
 
   * From the terminal session, run the following commands
   ```
-  docker exec -it bsycd /bsyc/src/bsyc-cli masternode outputs
+  docker exec -it baisyccoind /baisyccoin/src/baisyccoin-cli masternode outputs
   ```
   * Record this value, as you'll need it in the next step
 
