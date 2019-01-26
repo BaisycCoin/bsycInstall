@@ -111,14 +111,14 @@ docker restart baisyccoind
 
   * From the terminal session, run the following commands
   ```
-  docker exec -it bsycd /bsyc/src/bsyc-cli startmasternode alias 0 <alias>
+  docker exec -it baisyccoind /baisyccoin/src/baisyccoin-cli startmasternode alias 0 <alias>
   ```
 
 ### Checking your Linux VPS Masternode Status
 
   * From the terminal session, run the following commands
   ```
-  docker exec -it bsycd /bsyc/src/bsyc-cli masternode status
+  docker exec -it baisyccoind /baisyccoin/src/baisyccoin-cli masternode status
   ```
   * Your output should be similar to the following
 ```
@@ -141,7 +141,7 @@ docker restart baisyccoind
 
   * From the terminal session, run the following commands
   ```
-  docker logs -f bsycd
+  docker logs -f baisyccoind
   ```
 
 
