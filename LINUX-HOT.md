@@ -51,15 +51,15 @@
 
 * From the terminal session, run the following commands
 ```
-cd  ~/.bsyc
-nano ~/.bsyc/bsyc.conf
+cd  ~/.baisyccoin
+nano ~/.baisyccoin/baisyccoin.conf
 ```
 
 * Uncomment the masternode entries, replace any < > field with your information
 ```
 rpcuser=<rpcusername>
 rpcpassword=<rpcpassword>
-rpcport=22332
+rpcport=64759
 listen=1
 server=1
 daemon=1
@@ -78,7 +78,7 @@ externalip=<externalip>:64758
 
 * From the terminal session, run the following commands
 ```
-./bsyc-3.1.0/bin/bsyc-cli stop
+./baisyccoin-3.1.0/bin/bsyc-cli stop
 ./bsyc-3.1.0/bin/bsycd
 ```
 
