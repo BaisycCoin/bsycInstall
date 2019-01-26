@@ -1,10 +1,10 @@
 ## Windows Wallet Staking Guide
-* This section is designed to help you setup your Windows wallet for staking BSYC
+* This section is designed to help you setup your Windows wallet for staking BaisycCoin
 
 Install the latest released BaisycCoin Windows Wallet
 Both 32bit and 64bit variants are available
 
-[Wallet Releases](https://github.com/bsycum-network/bsyc/releases)
+[Wallet Releases](https://github.com/BaisycCoin/BaisycCoin/releases)
 
 ## Basic wallet Staking
 From inside your wallet create a passphrase
@@ -30,7 +30,7 @@ Staking=1
 Settings -> Unlock Wallet
 ```
 
-Now you are set to start staking your BSYC
+Now you are set to start staking your BaisycCoin
 
 Note: Remember transaction in your wallet will need 101 conformations to be eligable to start staking.
 
