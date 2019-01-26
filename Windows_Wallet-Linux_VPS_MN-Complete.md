@@ -169,30 +169,30 @@ masternodeprivkey=<masternode privkey>
 
 * Use \<Ctrl> + o to save and \<Ctrl> + x to close our baisyccoin.conf
 
-We may now start the server so that it begins to sync (note we don't need the full path to bsycd as it is in our $PATH variable):
+We may now start the server so that it begins to sync (note we don't need the full path to baisyccoind as it is in our $PATH variable):
 ```
-bsycd -daemon
+baisyccoind -daemon
 ```
 
 * Let's clean this place:
 
-```rm bsyc-3.1.0-linux.tar.gz README.md```
+```rm baisyccoin-1.0.0-x86_64-linux-gnu.tar.gz README.md```
 
 * Check the server is syncing:
 
-```watch ./bsyc-3.1.0/bin/bsyc-cli getinfo```
+```watch ./baisyccoin-1.0.0/bin/baisyccoin-cli getinfo```
 
 You should see the __blocks__ field raising
 * close this using \<Ctrl> + c
 
 
-* to allow bsycd to start after a reboot we'll set a cronjob:
+* to allow baisyccoind to start after a reboot we'll set a cronjob:
 
 ```crontab -e```
 
 Choose nano as editor (or the one you prefer), then insert a new line:
 
-```@reboot sleep 30 && /usr/local/bin/bsycd -daemon```
+```@reboot sleep 30 && /usr/local/bin/baisyccoind -daemon```
 
 Save and close (if using nano as you now know \<Ctrl> + o to save, \<Ctrl> + x to quit)
 It should say your crontab has been updated.
@@ -205,7 +205,7 @@ exit
 
 Yes, type exit twice: first one to revert to root and second one to exit the vps.
 
-__Note:__ When you later connect to your vps, connect yourself using bsyc credentials (username bsyc and the __good password__ you specified when we created the user bsyc above)
+__Note:__ When you later connect to your vps, connect yourself using baisyccoin credentials (username baisyccoin and the __good password__ you specified when we created the user baisyccoin above)
 
 ## Let's finish: back to your wallet
 
@@ -222,7 +222,7 @@ Then expect the first masternode reward within __~60h__ and then __every ~20 hou
 
 *After you have setup everything please take a screen capture of your node running in your wallet or type the IP and post it in #mn-hodler.
 
-[Discord Channel](https://discordapp.com/channels/443435262916427776/443633482468425729)
+[Discord Channel](https://discord.gg/AJpCnSB)
 
 Example:
 144.202.51.69:64758
