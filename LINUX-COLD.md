@@ -39,13 +39,13 @@
 
   * From the terminal session, run the following commands
   ```
-  ./bsyc-3.1.0/bin/bsyc-cli masternode outputs
+  ./baisyccoin-1.0.0/bin/baisyccoin-cli masternode outputs
   ```
   * Record this value, as you'll need it in the next step
 
 ## Create your Masternode configuration file on the VPS
 
-  * In the ~/.bsyc directory, edit the masternode.conf as described below
+  * In the ~/.baisyccoin directory, edit the masternode.conf as described below
   * Replace each < > field with the information obtained from the steps above.
     * ```<alias> <externalip>:64758 <masternode private key> <collateral txid> <collateral txid output>```
   * Example
@@ -55,15 +55,15 @@
 
 * From the terminal session, run the following commands
 ```
-cd  ~/.bsyc
-nano ~/.bsyc/bsyc.conf
+cd  ~/.baisyccoin
+nano ~/.baisyccoin/baisyccoin.conf
 ```
 
 * Uncomment the masternode entries, replace any < > field with your information
 ```
 rpcuser=<rpcusername>
 rpcpassword=<rpcpassword>
-rpcport=22332
+rpcport=64759
 listen=1
 server=1
 daemon=1
