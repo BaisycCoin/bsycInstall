@@ -40,10 +40,6 @@ externalip=<externalip>:64758
 #masternodeprivkey=<masternode private key>
 ```
 
-* Get the latest node seeds from [here](https://github.com/bsycum-network/seeds/blob/master/README.md)
-* Copy and paste the addnode lines into the bottom of this file
-* Save and Exit
-
 ## Run the BaisycCoin Linux Daemon in Docker
 
 * From the terminal session, run the following commands
