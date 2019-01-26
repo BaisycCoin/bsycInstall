@@ -23,7 +23,7 @@
 
 * Open the baisyccoin.conf file. It can be found in C:/Users/<Your User>/AppData/Roaming/BaisycCoin under Windows, .baisyccoin/baisyccoin.conf under GNU/Linux.
 * Copy the addnodes from [here](https://github.com/BaisycCoin/seeds/blob/master/README.md) into this file, then save it.
-* Re-open your bsyc-qt. It will now sync much more quickly.
+* Re-open your baisyccoin-qt. It will now sync much more quickly.
 
 ### Addresses
 
@@ -101,9 +101,9 @@
     
 ### Now we should be connected to our VPS, let's input the following commands in our VPS terminal:
 
-* Let's begin with adding a new user for bsyc, our user will be called bsyc:
+* Let's begin with adding a new user for baisyccoin, our user will be called baisyccoin:
 
-```adduser bsyc```
+```adduser baisyccoin```
 
 Answer the questions and choose a [good password](https://www.howtogeek.com/195430/how-to-create-a-strong-password-and-remember-it/)
 
