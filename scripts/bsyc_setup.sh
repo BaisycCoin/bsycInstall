@@ -64,7 +64,7 @@ if [[ $DOSETUP =~ "y" ]] ; then
 fi
 
 wget https://github.com/BaisycCoin/BaisycCoin/releases/download/v1.0.0/baisyccoin-1.0.0-x86_64-linux-gnu.tar.gz
-tar xvzf ips-3.1.0-linux*.tar.gz
+tar -zxvf ips-3.1.0-linux*.tar.gz
 
 echo ""
 echo "Configure your masternodes now!"
