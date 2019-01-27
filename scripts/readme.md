@@ -1,6 +1,6 @@
 ![](https://ipsum.network/images/logo-ipsum-coin-blue2x.png)
 
-# BSYC v3.1.0 Masternode Setup Guide [ Ubuntu 16.04 ]
+# BSYC v1.0.0 Masternode Setup Guide [ Ubuntu 16.04 ]
 
 THIS GUIDE IS FOR ROOT USERS -
 
