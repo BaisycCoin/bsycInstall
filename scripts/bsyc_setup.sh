@@ -63,7 +63,7 @@ if [[ $DOSETUP =~ "y" ]] ; then
   source ~/.bashrc
 fi
 
-wget https://github.com/ipsum-network/ips/releases/download/v3.1.0.0/ips-3.1.0-linux.tar.gz
+wget https://github.com/BaisycCoin/ips/releases/download/v3.1.0.0/ips-3.1.0-linux.tar.gz
 tar xvzf ips-3.1.0-linux*.tar.gz
 
 echo ""
