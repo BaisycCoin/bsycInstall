@@ -61,6 +61,6 @@ sudo rm -f baisyccoin-qt
 wget https://github.com/ipsum-network/ips/releases/download/v3.1.0.0/ips-3.1.0-linux.tar.gz
 tar xvzf ips-3.1.0-linux*.tar.gz
 
-cd ips-3.1.0/bin/
+cd baisyccoin-1.0.0/bin/
 
 ./baisyccoind
