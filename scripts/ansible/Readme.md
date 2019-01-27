@@ -9,7 +9,7 @@ This directory and subdirectories contains necessary files to install BSYC maste
 * bsyc_mn.yml is our playbook
 * hosts contains a definition of the hosts where BSYC masternodes are to be deployed
 * templates directory contains a template for baisyccoin.conf
-* files contains ipsd and ips-cli executables files
+* files contains baisyccoind and ips-cli executables files
 
 ### Instructions
 
