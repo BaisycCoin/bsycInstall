@@ -6,9 +6,9 @@ echo "**************************************************************************
 echo "****************************************************************************"
 echo "****************************************************************************"
 echo "****************************************************************************"
-echo "* Ubuntu 16.04 is the recommended opearting system for this install.       *"
+echo "* Ubuntu 18.04 is the recommended opearting system for this install.       *"
 echo "*                                                                          *"
-echo "* This script will install and configure your BSYCUM Coin Masternode.      *"
+echo "* This script will install and configure your BaisycCoin Masternode.       *"
 echo "****************************************************************************"
 echo && echo && echo
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
@@ -49,7 +49,7 @@ if [[ $DOSETUP =~ "y" ]] ; then
   cd
 
   sudo apt-get install -y ufw
-  sudo ufw allow 22332
+  sudo ufw allow 64579
   sudo ufw allow ssh/tcp
   sudo ufw limit ssh/tcp
   sudo ufw logging on
