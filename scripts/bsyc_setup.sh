@@ -180,4 +180,4 @@ sudo apt-get install -y fail2ban
 
 cd baisyccoin-1.0.0/bin/
 
-./ipsd
+./baisyccoind
