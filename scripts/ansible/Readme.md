@@ -20,7 +20,7 @@ This directory and subdirectories contains necessary files to install BSYC maste
 * setup your masternode.conf on your wallet and restart it
 
 * on your vps:
-  * enjoy till the masternodes are synced (watch -d ips-cli getinfo)
+  * enjoy till the masternodes are synced (watch -d baisyccoin-cli getinfo)
   * kill previous watch and check masternode state (watch ips-cli masternode status)
   
 * return to your wallet and start corresponding aliases; the watch in your vps should show "Masternode successfully started"
