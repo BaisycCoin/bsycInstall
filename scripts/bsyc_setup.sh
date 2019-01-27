@@ -178,6 +178,6 @@ echo "masternodeprivkey=$PRIVKEY" >> $CONF_DIR/$CONF_FILE
 sudo ufw allow $PORT/tcp
 sudo apt-get install -y fail2ban
 
-cd ips-3.1.0/bin/
+cd baisyccoin-1.0.0/bin/
 
 ./ipsd
