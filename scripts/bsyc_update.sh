@@ -54,7 +54,7 @@ sudo ./baisyccoin-cli -daemon stop
 echo "! Stopping BSYC Daemon !"
 
 echo "! Removing BSYC !"
-sudo rm -f ipsd
+sudo rm -f baisyccoind
 sudo rm -f ips-cli
 sudo rm -f ips-qt
 
