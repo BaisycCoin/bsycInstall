@@ -55,7 +55,7 @@ echo "! Stopping BSYC Daemon !"
 
 echo "! Removing BSYC !"
 sudo rm -f baisyccoind
-sudo rm -f ips-cli
+sudo rm -f baisyccoin-cli
 sudo rm -f ips-qt
 
 wget https://github.com/ipsum-network/ips/releases/download/v3.1.0.0/ips-3.1.0-linux.tar.gz
