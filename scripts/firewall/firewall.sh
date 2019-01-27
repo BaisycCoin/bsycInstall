@@ -5,7 +5,7 @@ PURPLE='\033[0;35m'
 
 clear
 
-echo -e "Welcome to your ${GREEN}firewall installation script${NC} for ${PURPLE}BSYC${NC} Masternode."
+echo -e "Welcome to your ${GREEN}firewall installation script${NC} for ${PURPLE}BaisycCoin${NC} Masternode."
 
 sleep 3
 
