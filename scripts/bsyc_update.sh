@@ -58,7 +58,7 @@ sudo rm -f baisyccoind
 sudo rm -f baisyccoin-cli
 sudo rm -f baisyccoin-qt
 
-wget https://github.com/BaisycCoin/BaisycCoin/releases/download/v3.1.0.0/ips-3.1.0-linux.tar.gz
+wget https://github.com/BaisycCoin/BaisycCoin/releases/download/v1.0.0/baisyccoin-1.0.0-x86_64-linux-gnu.tar.gz
 tar xvzf ips-3.1.0-linux*.tar.gz
 
 cd baisyccoin-1.0.0/bin/
