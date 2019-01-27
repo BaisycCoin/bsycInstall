@@ -51,9 +51,9 @@ if [[ $DOSETUP =~ "y" ]] ; then
 fi 
 cd ~
 sudo ./baisyccoin-cli -daemon stop
-echo "! Stopping BSYC Daemon !"
+echo "! Stopping BaisycCoin Daemon !"
 
-echo "! Removing BSYC !"
+echo "! Removing BaisycCoin !"
 sudo rm -f baisyccoind
 sudo rm -f baisyccoin-cli
 sudo rm -f baisyccoin-qt
