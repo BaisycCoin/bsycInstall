@@ -75,7 +75,7 @@ read PRIVKEY
 
 CONF_DIR=~/.baisyccoin/
 CONF_FILE=baisyccoin.conf
-PORT=22331
+PORT=64578
 
 mkdir -p $CONF_DIR
 echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> $CONF_DIR/$CONF_FILE
