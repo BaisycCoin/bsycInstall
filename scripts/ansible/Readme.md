@@ -6,7 +6,7 @@ This directory and subdirectories contains necessary files to install BSYC maste
 ### structure
 
 * ansible.cfg is the configuration file for ansible
-* ips_mn.yml is our playbook
+* bsyc_mn.yml is our playbook
 * hosts contains a definition of the hosts where BSYC masternodes are to be deployed
 * templates directory contains a template for ips.conf
 * files contains ipsd and ips-cli executables files
