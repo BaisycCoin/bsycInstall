@@ -50,7 +50,7 @@ if [[ $DOSETUP =~ "y" ]] ; then
   
 fi 
 cd ~
-sudo ./ips-cli -daemon stop
+sudo ./baisyccoin-cli -daemon stop
 echo "! Stopping BSYC Daemon !"
 
 echo "! Removing BSYC !"
