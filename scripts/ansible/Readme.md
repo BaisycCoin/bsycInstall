@@ -14,7 +14,7 @@ This directory and subdirectories contains necessary files to install BSYC maste
 ### Instructions
 
 * download the content of this directory and its subdirs
-* download ips release files, extract them under files directory (if release has changed this writing > 3.1.0, adapt the path in ips_mn.yml)
+* download BaisycCoin release files, extract them under files directory (if release has changed this writing > 1.0.0, adapt the path in ips_mn.yml)
 * adapt hosts file with your vps IPs, masternodes aliases, priv keys, tx_hashes and tx_ids
 * run ansible-playbook ips_mn.yml
 * setup your masternode.conf on your wallet and restart it
