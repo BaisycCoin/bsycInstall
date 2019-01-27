@@ -35,6 +35,6 @@ echo -e "If you get locked out, ${GREEN}don't panic${NC}: let a few minutes pass
 echo
 echo -e "${GREEN}your firewall is now up and running${NC}!"
 echo
-echo -e "Enjoy and happy crypto with ${PURPLE}BSYC${NC}!"
+echo -e "Enjoy and happy crypto with ${PURPLE}BaisycCoin${NC}!"
 sleep 2
 echo
