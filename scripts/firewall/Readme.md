@@ -6,6 +6,6 @@ From your VPS where your Masternode seats, run the following command as root:
 
 That's it.
 
-This will install fail2ban and ferm with specific rules for BSYC masternode.
+This will install fail2ban and ferm with specific rules for the BaisycCoin masternode.
 
 If running other servers or nodes on the server, you need to adapt firewall rules in ferm.conf file.
