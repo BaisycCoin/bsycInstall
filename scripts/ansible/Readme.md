@@ -1,4 +1,4 @@
-## BSYC masternode installation using ansible
+## BaisycCoin masternode installation using ansible
 
 This directory and subdirectories contains necessary files to install BSYC masternodes using ansible.
 
