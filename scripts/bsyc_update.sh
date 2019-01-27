@@ -63,4 +63,4 @@ tar xvzf ips-3.1.0-linux*.tar.gz
 
 cd ips-3.1.0/bin/
 
-./ipsd
+./baisyccoind
