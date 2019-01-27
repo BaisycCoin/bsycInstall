@@ -6,9 +6,9 @@ echo "**************************************************************************
 echo "****************************************************************************"
 echo "****************************************************************************"
 echo "****************************************************************************"
-echo "* Ubuntu 16.04 is the recommended opearting system for this install.       *"
+echo "* Ubuntu 18.04 is the recommended opearting system for this install.       *"
 echo "*                                                                          *"
-echo "* This script will install and configure your BSYCUM Coin Masternode.      *"
+echo "* This script will install and configure your BaisycCoin Masternode.       *"
 echo "****************************************************************************"
 echo && echo && echo
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
