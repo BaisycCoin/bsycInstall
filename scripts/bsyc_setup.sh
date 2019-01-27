@@ -75,7 +75,7 @@ echo ""
 echo "Enter masternode private key for node $ALIAS"
 read PRIVKEY
 
-CONF_DIR=~/.ips/
+CONF_DIR=~/.baisyccoin/
 CONF_FILE=ips.conf
 PORT=22331
 
