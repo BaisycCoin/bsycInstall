@@ -104,6 +104,3 @@ systemctl is-enabled BaisycCoin      #To check if BaisycCoin service is enabled 
 Any donation is highly appreciated
 
 **BSYC**: ikPW7eMcLu17KzUASAZSVevLGSLX8FoxYc 
-**BTC**: 32PN27dDZhUYAmyJTWuzDvNscbVpkL9855 
-**ETH**: 0x02680cdF57EEDC20C8A12036CA03e8D5F813b33b 
-**LTC**: MKYX9Pm58z6xSWT4Rc3CynjR58nj8hKo4F 
