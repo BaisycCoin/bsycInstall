@@ -39,7 +39,7 @@ It will take a couple of minutes to complete and then will present you a similar
 
 ![Example-Logo](https://cdn.discordapp.com/attachments/451822135464427521/484158919430766612/3.JPG)
 
-Remember to do `savenode-cli getblockcount` to check if VPS sync with chain
+Remember to do `baisyccoin-cli getblockcount` to check if VPS sync with chain
 
 Do not close your terminal/ command prompt window at this point.
 
