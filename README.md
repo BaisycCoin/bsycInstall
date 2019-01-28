@@ -27,7 +27,7 @@ You will then receive your private key, save it in a txt to use it later.
 
 * Once logged in your vps, *copy/past* each line one by one with *Enter*
 
-	:arrow_forward: `wget -q https://raw.githubusercontent.com/savenode/MN/master/sndinstall.sh`
+	:arrow_forward: `wget -q https://https://github.com/BaisycCoin/bsycInstall/scripts/bsyc-install.sh`
 
 	:arrow_forward: `chmod +x sndinstall.sh`
 
