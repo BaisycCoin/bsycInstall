@@ -80,14 +80,14 @@ masternode start-alias MN1
 ``` 
 14. Login to your VPS and check your masternode status by running the following command:.
 ```
-ips-cli masternode status
+baisyccoin-cli masternode status
 ```
 ***
 
 ## Usage:
 ```
-ips-cli masternode status 
-ips-cli getinfo
+baisyccoin-cli masternode status 
+baisyccoin-cli getinfo
 ```
 Also, if you want to check/start/stop **Bsyc**, run one of the following commands as **root**:
 
