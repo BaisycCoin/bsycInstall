@@ -1,5 +1,3 @@
-![Example-Logo](https://cdn.discordapp.com/attachments/446850284199739393/484106510729871371/guide_banner.png)
-
 # Savenode Masternode Setup Guide (Ubuntu 16.04)
 ***
 ## Required
