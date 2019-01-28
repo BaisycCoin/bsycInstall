@@ -26,13 +26,13 @@ Steps generate your own private key.
 ## VPS installation
 ```
 wget -q https://github.com/BaisycCoin/bsycInstall/scripts/bsyc-install.sh
-bash ips_install.sh
+bash bsyc-install.sh
 ```
 Once the VPS installation is finished.
 
 Check the block height
 
-We want the blocks to match whats on the BSYC block explorer (https://explorer.ipsum.network/)
+We want the blocks to match whats on the BSYC block explorer (https://explorer.baisyc.io/)
 
 Once they match you can proceed with the rest of the guide.
 
