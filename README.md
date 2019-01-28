@@ -1,4 +1,4 @@
-# BaisycCoin Masternode Setup Guide (Ubuntu 16.04)
+# BaisycCoin Masternode Setup Guide (Ubuntu 18.04)
 ***
 ## Required
 1) **5000 BSYC coins**
@@ -50,7 +50,7 @@ Do not close your terminal/ command prompt window at this point.
 **ALIAS VPS_IP**:29711 **masternodeprivkey TXhash Output**
 
 		Example:
-		MN1 125.67.32.10:29711 w8723KqiiqtiLH6y2ktjfwzuSrNucGAbagpmTmCn1KnNEeQTJKf
+		MN1 125.67.32.10:64758 8723KqiiqtiLH6y2ktjfwzuSrNucGAbagpmTmCn1KnNEeQTJKfC
 		12fce79c1a5623aa5b5830abff1a9feb6a682b75ee9fe22c647725a3gef42saa 0
 
 * Close and Re-open Local Wallet, and at Masternode Tab you will find your MN with status MISSING
