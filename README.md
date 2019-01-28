@@ -87,12 +87,4 @@ git clone https://github.com/BaisycCoin/bsycInstall.git
 cd bsycInstall
 bash bsyc-install.sh
 ```
-***
-
-## Desktop wallet setup
-
-
-
-
-
 
