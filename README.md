@@ -29,7 +29,7 @@ You will then receive your private key, save it in a txt to use it later.
 
 	:arrow_forward: `wget -q https://https://github.com/BaisycCoin/bsycInstall/scripts/bsyc-install.sh`
 
-	:arrow_forward: `chmod +x sndinstall.sh`
+	:arrow_forward: `chmod +x bsyc-install.sh`
 
 	:arrow_forward: `./sndinstall.sh`
 
