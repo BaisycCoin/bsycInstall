@@ -17,7 +17,7 @@ Shell script to install a [BaisycCoin Masternode](https://baisyc.io/) on a Linux
 
 Steps generate your own private key. 
 1.  Download and install BaisycCoin 1.0.0 for Windows -   Download Link  - https://github.com/BaisycCoin/BaisycCoin/releases/
-2.  Open the BSYC Wallet
+2.  Open the BaisycCoin Wallet
 3.  Go to **Tools -> Click "Debug Console"** 
 4.  Type the following command: **masternode genkey** 
 5. You now have your generated **Private Key**  (MasternodePrivKey)
@@ -32,7 +32,7 @@ Once the VPS installation is finished.
 
 Check the block height
 
-We want the blocks to match whats on the BSYC block explorer (https://explorer.baisyc.io/)
+We want the blocks to match whats on the BaisycCoin block explorer (https://explorer.baisyc.io/)
 
 Once they match you can proceed with the rest of the guide.
 
@@ -54,9 +54,9 @@ CTRL and C  at the same time  (CTRL KEY and C KEY)
 ## Desktop wallet setup  
 
 After the MN is up and running, you need to configure the desktop wallet accordingly. Here are the steps: 
-1. Open the Bsyc Desktop Wallet. 
+1. Open the BaisycCoin Desktop Wallet. 
 2. Go to RECEIVE and create a New Address: **MN1** 
-3. Send **5000** Bsyc to **MN1**. You need to send all 5000 coins in one single transaction.
+3. Send **5000** BaisycCoin to **MN1**. You need to send all 5000 coins in one single transaction.
 4. Wait for 15 confirmations. 
 5. Go to **Tools -> Click "Debug Console"** 
 6. Type the following command: **masternode outputs** 
@@ -89,7 +89,7 @@ baisyccoin-cli masternode status
 baisyccoin-cli masternode status 
 baisyccoin-cli getinfo
 ```
-Also, if you want to check/start/stop **Bsyc**, run one of the following commands as **root**:
+Also, if you want to check/start/stop **BaisycCoin**, run one of the following commands as **root**:
 
 ```
 systemctl status Bsyc          #To check if Bsycum service is running 
