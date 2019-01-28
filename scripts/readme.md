@@ -1,4 +1,4 @@
-![](https://i.postimg.cc/7LbhPVr0/splash.png)
+![](https://i.postimg.cc/rm094xxt/splash.png)
 
 # BSYC v1.0.0 Masternode Setup Guide [ Ubuntu 16.04 ]
 
