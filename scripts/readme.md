@@ -42,7 +42,7 @@ watch baisyccoin-cli getinfo
 ```
 Make sure the version number matches.
 ```
-"version" : 1000000,     ------------------This is the latest version (baisyccoin-v1.0.0)
+"version" : 1000001,     ------------------This is the latest version (baisyccoin-v1.0.0)
 ```
 
 Once the block height matches the block explorer issue the following command.
@@ -103,4 +103,4 @@ systemctl is-enabled BaisycCoin      #To check if BaisycCoin service is enabled 
 
 Any donation is highly appreciated
 
-**BSYC**: ikPW7eMcLu17KzUASAZSVevLGSLX8FoxYc 
+**BSYC**: BMKxCnevQ6kuDNVsNpA8GceJU6s7RD6QnE 
