@@ -94,7 +94,7 @@ Also, if you want to check/start/stop **BaisycCoin**, run one of the following c
 ```
 systemctl status BaisycCoin          #To check if BaisycCoin service is running 
 systemctl start BaisycCoin           #To start BaisycCoin service 
-systemctl stop Bsyc            #To stop Bsycum service 
+systemctl stop BaisycCoin            #To stop BaisycCoin service 
 systemctl is-enabled Bsyc      #To check if Bsycum service is enabled on boot 
 ``` 
 ***
