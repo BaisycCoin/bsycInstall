@@ -1,4 +1,5 @@
 ![](https://ipsum.network/images/logo-ipsum-coin-blue2x.png)
+![](https://ipsum.network/images/logo-ipsum-coin-blue2x.png)
 
 # BSYC v1.0.0 Masternode Setup Guide [ Ubuntu 16.04 ]
 
