@@ -16,13 +16,11 @@ Shell script to install a [BaisycCoin Masternode](https://baisyc.io/) on a Linux
 **This script can generate a private key for you, or you can generate your own private key on the Desktop software.**
 
 Steps generate your own private key. 
-1.  Download and install BSYC 3.1.0 for Windows -   Download Link  - https://github.com/BaisycCoin/BaisycCoin/releases/
-2.  When you start BSYC, the wallet will **NOT"** sync. 
-
-7.  Exit the BSYC Wallet, then Open the BSYC Wallet
-8.  Go to **Tools -> Click "Debug Console"** 
-9.  Type the following command: **masternode genkey** 
-10. You now have your generated **Private Key**  (MasternodePrivKey)
+1.  Download and install BaisycCoin 1.0.0 for Windows -   Download Link  - https://github.com/BaisycCoin/BaisycCoin/releases/
+2.  Open the BSYC Wallet
+3.  Go to **Tools -> Click "Debug Console"** 
+4.  Type the following command: **masternode genkey** 
+5. You now have your generated **Private Key**  (MasternodePrivKey)
 
 
 ## VPS installation
