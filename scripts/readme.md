@@ -38,11 +38,11 @@ Once they match you can proceed with the rest of the guide.
 
 Check the block height with the following command
 ```
-watch ips-cli getinfo
+watch baisyccoin-cli getinfo
 ```
 Make sure the version number matches.
 ```
-"version" : 3010000,     ------------------This is the latest version (ips-v3.1.0)
+"version" : 1000000,     ------------------This is the latest version (baisyccoin-v1.0.0)
 ```
 
 Once the block height matches the block explorer issue the following command.
@@ -53,13 +53,13 @@ CTRL and C  at the same time  (CTRL KEY and C KEY)
 
 ## Desktop wallet setup  
 
-After the MN is up and running, you need to configure the desktop wallet accordingly. Here are the steps:  
-1. Open the Bsyc Desktop Wallet.  
-2. Go to RECEIVE and create a New Address: **MN1**  
+After the MN is up and running, you need to configure the desktop wallet accordingly. Here are the steps: 
+1. Open the Bsyc Desktop Wallet. 
+2. Go to RECEIVE and create a New Address: **MN1** 
 3. Send **5000** Bsyc to **MN1**. You need to send all 5000 coins in one single transaction.
-4. Wait for 15 confirmations.  
+4. Wait for 15 confirmations. 
 5. Go to **Tools -> Click "Debug Console"** 
-6. Type the following command: **masternode outputs**  
+6. Type the following command: **masternode outputs** 
 7. Go to  **Tools -> "Open Masternode Configuration File"**
 8. Add the following entry:
 ```
@@ -86,24 +86,24 @@ ips-cli masternode status
 
 ## Usage:
 ```
-ips-cli masternode status  
+ips-cli masternode status 
 ips-cli getinfo
 ```
 Also, if you want to check/start/stop **Bsyc**, run one of the following commands as **root**:
 
 ```
-systemctl status Bsyc          #To check if Bsycum service is running  
-systemctl start Bsyc           #To start Bsycum service  
-systemctl stop Bsyc            #To stop Bsycum service  
-systemctl is-enabled Bsyc      #To check if Bsycum service is enabled on boot  
-```  
+systemctl status Bsyc          #To check if Bsycum service is running 
+systemctl start Bsyc           #To start Bsycum service 
+systemctl stop Bsyc            #To stop Bsycum service 
+systemctl is-enabled Bsyc      #To check if Bsycum service is enabled on boot 
+``` 
 ***
 
 ## Donations
 
 Any donation is highly appreciated
 
-**BSYC**: ikPW7eMcLu17KzUASAZSVevLGSLX8FoxYc  
-**BTC**: 32PN27dDZhUYAmyJTWuzDvNscbVpkL9855  
-**ETH**: 0x02680cdF57EEDC20C8A12036CA03e8D5F813b33b  
-**LTC**: MKYX9Pm58z6xSWT4Rc3CynjR58nj8hKo4F  
+**BSYC**: ikPW7eMcLu17KzUASAZSVevLGSLX8FoxYc 
+**BTC**: 32PN27dDZhUYAmyJTWuzDvNscbVpkL9855 
+**ETH**: 0x02680cdF57EEDC20C8A12036CA03e8D5F813b33b 
+**LTC**: MKYX9Pm58z6xSWT4Rc3CynjR58nj8hKo4F 
