@@ -8,7 +8,7 @@ User=root
 Group=root
 ```
 
-Shell script to install a [Bsyc Masternode](https://ipsum.network/) on a Linux server running Ubuntu 16.04. Use it on your own risk.
+Shell script to install a [BaisycCoin Masternode](https://baisyc.io/) on a Linux server running Ubuntu 18.04. Use it on your own risk.
 ***
 
 ## Private Key
