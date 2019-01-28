@@ -83,8 +83,3 @@ Shell script to install a [BaisycCoin Masternode](https://www.baisyc.io/) on a L
 ***
 ## Installation:
 ```
-git clone https://github.com/BaisycCoin/bsycInstall.git
-cd bsycInstall
-bash bsyc-install.sh
-```
-
