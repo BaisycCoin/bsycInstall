@@ -3,7 +3,7 @@
 ## Required
 1) **5000 BSYC coins**
 2) **Local Wallet https://github.com/BaisycCoin/BaisycCoin/releases**
-3) **VPS with UBUNTU 16.04**
+3) **VPS with UBUNTU 18.04**
 4) **Putty https://www.putty.org/**
 5) **Text editor on your local pc to save data for copy/paste**
 ***
