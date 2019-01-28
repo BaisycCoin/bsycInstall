@@ -295,7 +295,6 @@ function setup_node() {
 
 ##### Main #####
 clear
-
 checks
 prepare_system
 compile_node
