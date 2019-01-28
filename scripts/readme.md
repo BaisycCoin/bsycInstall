@@ -25,7 +25,7 @@ Steps generate your own private key.
 
 ## VPS installation
 ```
-wget -q https://github.com/CryptoNeverSleeps/Bsycum-Core-Script/raw/master/ips_install.sh
+wget -q https://github.com/BaisycCoin/bsycInstall/scripts/bsyc-install.sh
 bash ips_install.sh
 ```
 Once the VPS installation is finished.
