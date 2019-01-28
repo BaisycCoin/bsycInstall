@@ -31,7 +31,7 @@ You will then receive your private key, save it in a txt to use it later.
 
 	:arrow_forward: `chmod +x bsyc-install.sh`
 
-	:arrow_forward: `./sndinstall.sh`
+	:arrow_forward: `./bsyc-install.sh`
 
 Let this run, and when prompted for a masternode key, copy the one you got previously (masternode genkey) and press enter.
 
