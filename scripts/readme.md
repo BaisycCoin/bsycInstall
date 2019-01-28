@@ -1,6 +1,4 @@
-![](https://i.postimg.cc/rm094xxt/splash.png)
-
-# BSYC v1.0.0 Masternode Setup Guide [ Ubuntu 16.04 ]
+# BaisycCoin v1.0.0 Masternode Setup Guide [ Ubuntu 18.04 ]
 
 THIS GUIDE IS FOR ROOT USERS -
 
