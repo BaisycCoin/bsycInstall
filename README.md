@@ -1,7 +1,7 @@
-# Savenode Masternode Setup Guide (Ubuntu 16.04)
+# BaisycCoin Masternode Setup Guide (Ubuntu 16.04)
 ***
 ## Required
-1) **32000 SNO coins**
+1) **5000 BSYC coins**
 2) **Local Wallet https://github.com/savenode/SaveNodeCore/releases**
 3) **VPS with UBUNTU 16.04**
 4) **Putty https://www.putty.org/**
@@ -72,4 +72,4 @@ Do not close your terminal/ command prompt window at this point.
 
 You need to get **"status" : 4**
 
-## Congratulations your Savenode node it's running
+## Congratulations your BaisycCoin node it's running
