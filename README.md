@@ -37,8 +37,6 @@ Let this run, and when prompted for a masternode key, copy the one you got previ
 
 It will take a couple of minutes to complete and then will present you a similar board like this: 
 
-![Example-Logo](https://cdn.discordapp.com/attachments/538638228408762370/539461792813023263/Screenshot_from_2019-01-28_17-48-54.png)
-
 Remember to do `baisyccoin-cli getblockcount` to check if VPS sync with chain
 
 Do not close your terminal/ command prompt window at this point.
