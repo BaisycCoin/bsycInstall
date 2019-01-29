@@ -63,5 +63,5 @@
             cron:
                     name: "starts baisyccoind on reboot"
                     special_time: reboot
-                    job: "sleep 30 && /usr/local/bin/baisyccoind -daemon"
+                    job: "sleep 60 && /usr/local/bin/baisyccoind -daemon"
                     user: baisyccoin
